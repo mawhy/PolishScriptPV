@@ -1,6 +1,7 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{polski}
+\usepackage{imakeidx}
 \usepackage[utf8]{inputenc}
 %\usepackage[cp1250]{inputenc}
 \usepackage[french,polish]{babel}
@@ -18,7 +19,7 @@
 \usepackage{lmodern}
 \usepackage[rgb]{xcolor}
 \usepackage[author={Michał Małaj}]{pdfcomment}
-
+\makeindex
 
 
 
@@ -2441,7 +2442,7 @@ Panele przetwarzają energię: \textbf{za pomocą \pdfmarkupcomment[markup=Squig
 
 Instalacja autonomiczna to instalacja \textbf{\pdfmarkupcomment[markup=Squiggly,color=green]{off grid}{}} czyli wyłączona z sieci 
 
-Najwyższą sprawność ogniw fotowoltaicznych mają: \textbf{\pdfmarkupcomment[markup=Squiggly,color=green]{ogniwa hybrydowe}{}}
+Najwyższą sprawność ogniw fotowoltaicznych mają: \textbf{\pdfmarkupcomment[markup=Squiggly,color=green]{ogniwa hybrydowe}{systemy produkujące energię elektryczną bądź cieplną, przy użyciu więcej niż jednego źródła energii. W przypadku fotowoltaiki są kombinacją panelu fotowoltaicznego i innego systemu wytwarzania energii (np. generatora spalinowego, turbiny wiatrowej, kolektora słonecznego itp.)}}
 
 Jakiego typu diody zabezpieczają panele fotowoltaiczne połączone szeregowo przez wpływem prądu zwrotnego: \textbf{\pdfmarkupcomment[markup=Squiggly,color=green]{diody bocznikujące}{}}
 
@@ -2557,9 +2558,379 @@ przepięciowe
 odgromowe
 \clearpage
 
-\section{Koniec}
-\vspace{5mm}
+\section{Słowniczek}
+Amper [A] (ang. Ampere)\index{amper} – jednostka natężenia prądu [I], oznacza ilość ładunku elektrycznego przepływającego przez powierzchnię w jednostce czasu. 1A≈6.241 × 1018 elektronów lub: 1A = 1 C (kulomb) /1 s (sekundę). Wartość natężenia prądu wyrażoną w amperach nazywamy amperażem (ang. Amperage)
+
+Amperogodzina [Ah] (ang. Ampere-hour)\index{amperogodzina} – ilość energii elektrycznej równa przepływowi prądu o wartości 1 A w czasie 1 godziny. Jest miarą pojemności m.in. akumulatorów elektrycznych, określa ich zdolność do zasilania obwodu elektrycznego prądem o danym natężeniu przez określony czas.
+Ah = natężenie prądu  [A] * czas [h]
+
+AC (ang. Alternating current)\index{prąd zmienny} – prąd zmienny – prąd elektryczny, którego natężenie jest zmienne w czasie. Wyróżniamy tu prąd okresowo zmienny (tętniący, przemienny) i nieokresowy. Skrót AC stosowany jest najczęściej do określenia prądu naprzemiennego (zob. przemienny prąd)
+
+Akumulator elektryczny (ang. Rechargeable battery)\index{akumulator} – rodzaj odwracalnego ogniwa galwanicznego, służy do wielokrotnego magazynowania i oddawania energii elektrycznej w postaci chemicznej. Podstawowym parametrem akumulatora jest pojemność. Jest to zdolność ogniwa do przechowywania ładunku elektrycznego, wyrażana w amperogodzinach [Ah] i np. kulombach [C]. 1 Ah = 3600 C
+
+AM (ang. air mass)\index{masa optyczna atmosfery} – masa optyczna atmosfery – Jest wskaźnikiem długości drogi, jaką pokonuje wiązka promieniowania słonecznego bezpośredniego przez atmosferę, by dotrzeć do powierzchni ziemi. Np. masa optyczna atmosfery na poziomie morza przy bezchmurnym niebie, kiedy Słońce znajduje się w zenicie i ciśnienie atmosferyczne wynosi P=1,013*105 Pa AM jest równa 1 (AM1). Przy prostopadłym do Ziemi ustawieniu Słońca światło słoneczne przechodzi przez optyczną masę atmosfery (AM – air mass) tylko raz – M1. W innych przypadkach, droga promieniowania słonecznego przez atmosferę jest dłuższa. Gdy słońce znajduje się pod kątem 30° nad horyzontem, wartość optycznej masy atmosfery wynosi AM2 i wskazuje, że droga światła słonecznego przez atmosferę jest dwa razy dłuższa niż przy AM1. (Zob. też promieniowanie, promieniowanie rozproszone)
+
+Arsenek galu GaAs (ang. Gallium arsenide) \index{arsenek galu}– nieorganiczny związek chemiczny galu i arsenu, półprzewodnik wykorzystywany w fotowoltaice, wykazuje większą od krzemu odporność na działanie promieniowania elektromagnetycznego i lepsze dopasowanie czułości do widma promieniowania słonecznego. Ogniwa z GaAs mają największe sprawności, lecz także najwyższy koszt. Znajdują one zastosowanie w przemyśle kosmicznym.
+
+Amorficzny krzem (a-Si) (ang. Amorphous silicon)\index{amorficzny krzem} – to niekrystaliczny alotrop pozyskiwany z krzemu, tzw. krzem w fazie amorficznej, czyli nieuporządkowanej. Jest szeroko rozpowszechniony w produkcji ogniw fotowoltaicznych, wyświetlaczy LCD, OLED. Cena ogniw wykonanych z amorficznego krzemu jest niższa dzięki zastosowaniu prostszych technologii niż przy krzemie mono i polikrystalicznym. Sprawność i trwałość ogniw z krzemu amorficznego są niższe, choć zdolności absorpcyjne większe. Żywotność krzemu w postaci bezpostaciowej jest ponad dwukrotnie niższa od krzemu monokrystalicznego i wynosi ok. 10 lat. Technologia nanoszenia cienkich warstw krzemu amorficznego umożliwia produkcję elastycznych ogniw cienkowarstwowych, co zwiększa zakres różnorodności zastosowań fotowoltaiki.
+
+Absorpcja (ang. Absorption)\index{absorpcja} – pochłanianie promieni słonecznych, powodujące przechodzenie elektronów do stanu wzbudzonego.
+
+Amperomierz (ang. Ammeter)\index{amperomierz} – instrument pomiarowy do badania natężenia prądu elektrycznego. W zależności od zakresu działania prądu stosuje się różną skalę jednostek urządzenia – np. miliamperomierz.
+
+Azymut (ang. Azimuth)\index{azymut} – w fotowoltaice – południe, czyli kierunek najbardziej wskazany ze względu na sprawność ogniw fotowoltaicznych. Kąt azymutu oznacza odchylenie powierzchni panelu PV od kierunku południowego.
+
+Autonomiczny system PV (ang. Autonomous system PV)\index{off-grid} – mamy z nią do czynienia, gdy instalacja PV w pełni zaspokaja zapotrzebowanie gospodarstw domowego na prąd. Energia wyprodukowana przez instalację jest magazynowana w akumulatorach skąd może być wykorzystana w każdym momencie doby. W systemie autonomicznym konieczna jest obecność regulatora ładowania, w celu zapobiegnięcia zniszczeniu akumulatora przez całkowite wyładowanie lub przeładowanie. W przypadku instalacji bez akumulatorów, brak oświetlenia paneli oznacza zanik energii elektrycznej.
+
+Autonomiczny system PV z podłączeniem do sieci (ang. Autonomous system PV with grid connection) – gospodarstwo domowe zasilane jest z fotowoltaiki, jednak przyłączenie do lokalnej sieci energetycznej umożliwia korzystanie z niej w przypadku braku bądź niskiego uzysku energetycznego z instalacji PV.
+
+Anoda (ang. Anode)\index{anoda} – Element budowy akumulatora. Podczas pracy akumulatora ma znak ujemny, podczas ładowania dodatni. Na niej zachodzi proces utleniania.
+
+
+Bateria słoneczna (ang. Solar array)\index{panel fotowoltaiczny} – zob. panel fotowoltaiczny
+
+BIPV (ang. Buidling-Integrated Photovoltaics)\index{bipv} – integracja ogniw fotowoltaicznych z konstrukcjami budynków
+
+Bilans energetyczny (ang. Energy balance)\index{bilans energetyczny} – jest to analiza przepływu energii zachodzącego podczas eksploatacji instalacji fotowoltaicznej.  Na bilans energetyczny składają się zapotrzebowanie energetyczne i efekt energetyczny.
+
+Bocznikujące diody (ang. Bypass diode)\index{dioda bocznikująca} – element półprzewodnikowy stosowany w panelach fotowoltaicznych. Zabezpieczają one przed przepływem prądu zwrotnego\index{prąd zwrotny} przez niesprawne ogniwa fotowoltaiczne, przeprowadzając prąd wokół nich.
+
+Bezpośrednie promieniowanie (ang. Direct radiation)\index{bezpośrednie promieniowanie} – część energii promieniowania słonecznego docierającego przez atmosferę do powierzchni ziemskiej bezpośrednio od Słońca. Ma postać promieni równoległych, nierozproszonych na żadnej przeszkodzie.
+
+Blokujące diody (ang. blocking diode)\index{dioda blokująca} – tak jak diody bocznikujące są elementem zabezpieczającym panel fotowoltaiczny przed wpływem prądu zwrotnego. Ich działanie polega na zatrzymaniu przepływu prądu przez niesprawne ogniwo.
+
+
+Chalkopiryty CuFeS2 (ang. Chalcopyrite)\index{chalkopiryt} – są to minerały z grupy siarczków, w fotowoltaice wykorzystywane jako półprzewodniki w ogniwach cienkowarstwowych. Najczęściej stosowany jest diselenek miedziowo indowy. Ogniwa wykorzystujące chalkopiryty wykazują w warunkach laboratoryjnych sprawności rzędu 18%, jednak technologia ich wytwarzania jest stosunkowo droga.
+
+Czysta energia (ang. Clean Energy)\index{energia odnawialna}, energia odnawialna – Energia powstała przez wykorzystanie odnawialnych źródeł energii.
+
+Charakterystyka prądowa-napięciowa (ang. voltage-current characteristic)\index{charakterystyka prądowa-napięciowa} – wykres przedstawiający zależność pomiędzy natężeniem prądu a napięciem w panelu fotowoltaicznym, od punktu bez obciążenia do maksymalnego napięcia. Krzywa wykresu obrazuje wydajność baterii słonecznej.
+
+Całkowite promieniowanie (ang. total radiation) – jest to suma całkowitej ilości światła pochodzącego ze słońca dochodzącego do powierzchni ziemi – zestawienie wartości promieniowania bezpośredniego, rozproszonego i odbitego.
+
+Cienkowarstwowe ogniwa (ang. Thin-film solar cells) – należą do ogniw drugiej generacji, wykonane są poprzez nanoszenie cienkich warstw krzemu amorficznego na szklane płytki. Stanowią one obiecującą alternatywę dla ogniw I generacji. Dają możliwość umieszczania na rozmaitych obiektach, również na elastycznych. Obecnie efektywność produkcji energii jest niższa niż przy zwykłych ogniwach, jednakże niższe są również koszty produkcji.
+
+CISG (ang. Copper indium gallium selenide) – materiał półprzewodnikowy zbudowany z miedzi, indu, galu i selenu. Jest to typ ogniw cienkowarstwowych charakteryzujących się wyższą efektywnością i trwałością. Należą one do ogniw II generacji.
+
+Ciemny prąd (ang. dark current) – jest to prąd o niskiej wartości przepływający przez urządzenia światłoczułe, w czasie braku dostępu światła.
+D.
+
+Diody obejściowe (ang. Bypass Diode) – zobacz bocznikujące diody
+
+Diody blokujące (ang. Blocking Diode) – działają tak samo jak diody obejściowe (bocznikujące). Różnią się położeniem w instalacji fotowoltaicznej.
+
+DC (ang. Direct current) – prąd stały charakteryzuje się stałą wartością kierunku i natężenia przepływu prądu. Przy zasilaniu prądem stałym chwilowa wartość mocy jest stała, co jest konieczne dla układów wzmacniania i przetwarzania sygnałów, oraz dla półprzewodnikowych układów elektronicznych.
+
+DSSC (ang. Dye-sensitized solar cell) – innowacyjna technologia w ogniwach fotowoltaicznych III generacji oparta na zjawisku konwersji fotochemicznej. Analogicznie do zjawiska fotosyntezy zachodzącej w roślinach, w ogniwach DSSC odpowiednikiem chlorofilu są barwniki syntetyczne, natomiast samo ogniwo zbudowane jest z nanostruktury TiO2. Pomiędzy barwnikiem a powierzchnią przewodzącą znajduje się elektrolit na bazie jodku. Ogniwa DSSC jak wszystkie ogniwa III generacji należą do urządzeń o niskiej sprawności.
+E.
+
+Efekt fotowoltaiczny (ang. Photovoltaic effect) – jest to proces zachodzący w ogniwach fotowoltaicznych, polega na uwalnianiu elektronów walencyjnych z wiązań atomowych w materiałach półprzewodnikowych. Oswobodzone elektrony pozostają wewnątrz materiału i poruszają się w nim swobodnie. Miejsce po uwolnionym elektronie może zająć elektron z wiązania sąsiedniego. „Dziura” po uwolnionym elektronie przenosi się do wiązania sąsiedniego. Ruch elektronów i miejsc po elektronach w materiale półprzewodnikowym powoduje przewodzenie prądu.
+
+Efektywność (ang. Efficient) – jest to stosunek energii (mocy) wyjściowej do energii (mocy) wejściowej panelu fotowoltaicznego. Wyrażana jest ona w procentach.
+
+Energetyka słoneczna (ang. Solar energy) – dział energetyki zajmujący się pozyskiwaniem energii z promieniowania słonecznego. Energię słonecznej można wykorzystywać na trzy sposoby – poprzez konwersję fototowoltaiczną (panele fotowoltaiczne), fototermiczną (kolektory słoneczne), oraz fotochemiczną (fotosynteza).
+
+ 
+
+F.
+
+Farma fotowoltaiczna (ang. Photovoltaic farm, PV farm) – naziemna bądź dachowa instalacja fotowoltaiczna o dużej mocy
+
+Fotowoltaika (ang. Photovoltaic, PV) – dziedzina nauki zajmująca się konwersją promieniowania słonecznego na energię elektryczną przy wykorzystani zjawiska (efektu) fotowoltaicznego.
+
+Fotoogniwo (ang. Solar cell, photovoltaic cell) – element półprzewodnikowy, w którym następuje konwersja fotowoltaiczna. Ogniwo jest podstawową jednostką budowy panelu fotowoltaicznego.
+
+Foton (ang. Photon) – jest to cząstka elementarna nieposiadająca ładunku elektrycznego ani momentu magnetycznego. Fotony są nośnikami oddziaływań elektromagnetycznych.
+
+Fotoemisja (ang. Photoelectric effect) – emisja fotoelektronowa – jest to zjawisko emitowania elektronów przez obiekty, w wyniku oświetlania ich światłem, którego energia jest wyższa niż energia wzbudzenia
+
+Falownik (ang. Inverter) – przekształtnik prądu stałego na prąd zmienny (DC -> AC). W instalacjach fotowoltaicznych przekształca prąd stały powstały w bateriach słonecznych i dostosowuje go do odbiorników i sieci elektrycznej. Falownik obok paneli jest drugim najistotniejszym elementem instalacji PV.
+G.
+
+Generacja energii elektrycznej (ang. Generation of electricity) – wytwarzanie energii elektrycznej
+
+Gęstość strumienia energii (ang.) – zob. natężenie promieniowania słonecznego, stała słoneczna
+
+Generacje ogniw (ang. Solar cells generation) – systematyka wprowadzona w celu podziału ogniw fotowoltaicznych w zależności od technologii i materiału ich  wykonania. Wyróżniamy 3 generacje, o uproszczonej charakterystyce:
+H.
+
+Hybrydowe systemy (ang.) – systemy produkujące energię elektryczną bądź cieplną, przy użyciu więcej niż jednego źródła energii. W przypadku fotowoltaiki są kombinacją panelu fotowoltaicznego i innego systemu wytwarzania energii (np. generatora spalinowego, turbiny wiatrowej, kolektora słonecznego itp.)
+
+Heterozłączowe ogniwo (ang. Heterojunction cell) – typ złącza w półprzewodniku, mamy z nim do czynienia, gdy przewodzenie p – n występuje na styku dwóch materiałów o różnym typie przewodnictwa.
+
+Homozłączowe ogniwo (ang. Homojunction cell) – typ złącza w półprzewodniku, mamy z nim do czynienia, gdy przewodzenie p – n następuje w obrębie jednego materiału.
+
+Helioelektrownia – elektrownia słoneczna
+I.
+
+Inwerter (ang. Inverter) – przetwornica/przetwornik/falownik – element budowy instalacji fotowoltaicznej, urządzenie służące do zamiany prądu stałego na prąd zmienny. Zob. falownik.
+
+ISC (ang. Short circuit current) – prąd zwarciowy – wartość natężenia prądu w ogniwie fotowoltaicznym, w chwili maksymalnego obciążenia.
+J.
+
+[J] – dżul (ang. Joule) – jednostka pracy, energii oraz ciepła w układzie SI równa 1/3600 kWh (kilowatogodzin). 1J to praca wykonana przez siłę o wartości 1N przy przesunięciu punktu przyłożenia siły o 1 m w kierunku równoległym do kierunku działania siły.
+
+Jałowe napięcie (ang. Open circuit voltage) – napięcie prądu w panelu fotowoltaicznym w momencie niepodłączenia do żadnego obciążenia.
+K.
+
+Katoda (ang. Cathode) – element budowy urządzenia elektrycznego, przez który wypływa prąd elektryczny. Katoda zawsze występuje w parze z elektrodą ujemną – anodą, przez którą prąd wpływa.
+
+Konwerter (ang. Converter) – jest to urządzenie elektryczne służące do przemiany prądu zmiennego w prąd stały.
+
+Krzem (ang. Silicon) – pierwiastek chemiczny o wzorze Si, główny materiał budulcowy ogniw fotowoltaicznych.  Krzemowe ogniwa fotowoltaiczne należą do ogniw I generacji i charakteryzują się najwyższymi osiąganymi sprawnościami. Problemem jest jednak cena owych ogniw. Krzem do celów fotowoltaicznych musi być w 99,9% w czystej postaci. Najefektywniejsze jest wykorzystanie ogniw z krzemu monokrystalicznego. Występują także tańsze i mniej trwałe odmiany ogniw krzemowych i są to: polikrystaliczne i amorficzne (bezpostaciowe).
+
+Krzywa mocy (ang. Power curve) – jest to wykres zależności natężenia prądu od napięcia w panelu fotowoltaicznym. Analiza krzywej mocy służy np. odnalezieniu punktu maksymalnej mocy.
+
+Konwersja fotowoltaiczna (ang. Photovoltaic conversion) – bezpośrednia zmiana energii promieniowania słonecznego na energię elektryczną zachodząca w ogniwie fotowoltaicznym.
+
+Kąt pochylenia (ang. Tilt angle) – kąt nachylenia panelu słonecznego względem słońca mierzony od poziomu. Nachylenie panelu wpływa na efektywność wytwarzania energii elektrycznej i powinna być dostosowana do kąta, pod jakim padają promienie słoneczne. W ciągu roku, gdy słońce znajduje się na różnych wysokościach, odpowiedni kąt nachylenia waha się od 30° d0 60°. Optymalnym całorocznym ustawieniem paneli na obszarze Polski jest kąt 40°.
+
+Kąt padania (ang. Angle of Incidence) – Jest to kąt, przy którym promienie słoneczne padające na powierzchnię panelu są do niego prostopadłe. Kąt padania wynosi 0°, gdy powierzchnia panelu skierowana jest bezpośrednio w stronę Słońca. Kąt padania jest równy 90°, gdy oświetlana powierzchnia jest równoległa do promieni słonecznych.
+M.
+
+Moduł (ang. Module) – Integralne, hermetycznie zamknięte urządzenie, składające się z ogniw fotowoltaicznych, zdolne do wytwarzania prądu stałego pod wpływem promieniowania świetlnego.
+
+Moc (ang. Power) – skalarna wielkość fizyczna określająca pracę wykonaną w jednostce czasu przez układ fizyczny. Podawana przez producenta nominalna moc modułu fotowoltaicznego oznacza moc zmierzoną w warunkach testowych (STC). Zależy ona od natężenia promieniowania słonecznego, wyrażana jest w jednostce W/m2.
+
+Monokrystaliczny krzem (ang. Monokrystalline silicon) – materiał budulcowy podstawowego i jak dotąd najsprawniejszego typu ogniw fotowoltaicznych. Ogniwa takie zbudowane są z jednorodnego kryształu krzemu o uporządkowanej budowie wewnętrznej. Powstają poprzez cięcie bloku krzemu o odpowiedniej wielkości, na „plastry” grubości ok. 0,3 mm. Monokrystaliczny krzem powstaje poprzez roztopienie krzemu polikrystalicznego, a następnie w powolnym procesie krzepnięcia.
+
+Masa optyczna atmosfery (AM) (ang. Air mass) – zob. AM
+
+Megawat (ang. Megawatt) – zob. wat. Jednostka mocy systemu fotowoltaicznego. 1MW = 106W.
+
+Moc zainstalowana (ang. Istalled capacity) – określa wartość potencjalnej wielkości energii elektrycznej możliwej do uzyskania przez instalację fotowoltaiczną (inaczej – moc dyspozycyjna zainstalowanych urządzeń).
+
+ 
+
+N.
+
+Napięcie elektryczne (ang. Voltage) – różnica potencjałów elektrycznych między dwoma punktami obwodu elektrycznego lub pola elektrycznego. Wartości charakterystyczne napięcia sieciowego w Polsce określa Norma  PN-IEC 60038 i wynoszą: 50Hz i 230V.
+
+Natężenie promieniowania słonecznego (ang. Intensity of solar radiation), inaczej gęstość strumienia energii – jest to ilość energii cieplnej, jaką otrzymuje jednostka powierzchni ustawiona prostopadle do biegu promieni, w jednostce czasu. Oznaczamy ją symbolem I. Zob. też: Stała słoneczna.
+
+Natężenie prądu – liczba ładunków przepływających z prędkością v, przez powierzchnię s (przekrój przewodnika). W układzie SI jednostką natężenia prądu jest amper [A] (zob. Amper).
+O.
+On-Grid system – system fotowoltaiczny przyłączony do lokalnej sieci energetycznej.
+
+Odbite promieniowanie – to ta część promieniowania całkowitego, które dochodząc do powierzchni Ziemi jest odbijana ku górze.
+
+Obejściowe diody – zob. bocznikujące diody
+
+OZE –  Jest to skrótowe określenie na „odnawialne źródła energii”, czyli takie, których użytkowanie nie wiąże się ze zwiększaniem ich deficytu. Do odnawialnych źródeł energii zaliczamy energię masy ziemi, słoneczną, wiatrową, oraz energię wody zarówno powierzchniowej jak i głębinowej (rzeki, jeziora, cieki geotermalne itp.).
+
+OPV (ang. Organic photovoltaic) – organiczne ogniwa fotowoltaiczne – ogniwa III generacji
+P.
+
+Prąd elektryczny (ang. Electric current) – uporządkowany ruch ładunków elektrycznych.
+
+Przemienny prąd AC (ang. Alternating current) – jest jednym z rodzajów prądów zmiennych (zob. AC), charakteryzujący się okresowymi zmianami napięcia elektrycznego z określoną częstotliwością. Wartości chwilowe prądu przyjmują wartości na przemian dodatnie i ujemne. Pożądanym jest by wartość średnia całookresowa wynosiła 0. Zakłócenia lub nieliniowość powodują powstanie przebiegu odkształconego. Urządzenia elektryczne codziennego użycia pracują z wykorzystaniem prądu zmiennego. (zob też: Napięcie elektryczne)
+
+Polimery – z naprzemiennymi wiązaniami chemicznymi pojedynczymi i podwójnymi mają strukturę podobną do półprzewodnika (polimery przewodzące). Są bardzo tanie w produkcji, elastyczne. Sprawności rzędu 3 – 5 %.
+
+Półprzewodnikowe związki (ang. semiconductor) – są to materiały o pasmowym charakterze budowy, w którym warstwy pasm przewodnictwa oddzielone są od siebie
+
+Promieniowanie słońca (ang. solar radiation) – jest to strumień fal elektromagnetycznych i cząstek elementarnych docierający ze Słońca do Ziemi główne źródło energii cieplnej docierającej do Ziemi ze Słońca
+
+Pochłonięte promieniowanie (ang. ) – jest to różnica pomiędzy promieniowaniem całkowitym, a odbitym. Pochłanianie powoduje zmianę jakościową energii słonecznej, dzięki niemu jej część przekształca się w energię cieplną
+PV (ang.Photovoltaic) – fotowoltika
+
+PVT (ang. Photovoltaic thermal) – kolektory hybrydowe – połączenie paneli fotowoltaicznych z kolektorami słonecznymi
+
+p-n złącze (ang. p–n junction) – jest to złącze dwóch półprzewodników o różnych typach przewodnictwa: p (positive) i n (negative). W obszarze n nośnikami są elektrony. Atomy domieszek pozostają unieruchomione w siatce krystalicznej. W obszarze p nośnikami są dziury o ładunku elektrycznym dodatnim. Atomy domieszek są tu akceptorami.
+
+Przetwornik/przetwornica (ang.Inverter) –  zob. inwerter
+R.
+
+Rozproszone promieniowanie (ang. ) –  (zob. też AM) Promieniowanie rozproszone to takie w którym kierunek ruchu fotonów zmienił się z uporządkowanego na chaotyczny w wyniku zetknięcia z cząsteczkami atmosfery i zawartymi w niej aerozolami. Ten rodzaj promieniowania odgrywa bardzo istotną rolę, gdy niebo jest mocno zachmurzone i nie przepuszcza promieniowania bezpośredniego. Za jego pośrednictwem dociera wówczas do Ziemi światło słoneczne, choć tarcza Słońca pozostaje niewidoczna. to ta część promieni, która ulega odchyleniu (zmianie kierunku) w niejednorodnym optycznie środowisku, jakim jest  atmosfera.
+
+Referencyjne promieniowanie (ang. ) – zob. rozproszone promieniowanie
+
+Regulator ładowania (ang.)\index{regulator ładowania} – to urządzenie stosowane między baterią słoneczną a akumulatorem. Regulatory są używane aby utrzymywać akumulator w pełni naładowany i nie dopuszczać do jego przeładowania a takze nadmiernego rozładowania przez odbiorniki. Zabezpieczają także przed tzw. prądem „ciemnym” pobieranym przez panel słoneczny przy braku oswietlenia, jeżeli panel nie został wyposażony w diodę blokującą. Regulatory mogą się różnić napięciem z jakim pracują oraz maksymalnym natężeniemprądu jaki może przez nie płynąć. Typowy regulator pracuje z napięciem 12 lub 24V. Zawansowane regulatory typu MPPT używają systemu śledzenia punktu maksymalnej mocy uzyskiwanej z panela, który automatycznie pozwala systemowi pracować przy napięciu, które daje maksymalną moc wyjściową.
+
+Rodzaje regulatorów:
+
+•    prosty 1-2 stopniowy – pracuje na zasadzie przetłaczania energii do akumulatora. Po osiągnięciu odpowiedniego napięcia, panel zostaje odłączony.
+
+•    3 stopniowy PWM
+
+•    MPPT (maximum power point tracking) – regulatory śledzące maksymalne napięcie. Ten typ regulatorów również pracuje w trybie PWM. Regulatory typu MPPT pozwalają na dostarczenie 10-30% więcej energii do akumulatora. Zazwyczaj są droższe od standardowych regulatorów PWM
+
+Solar (ang. Solar)\index{panel fotowoltaiczny} – panel fotowoltaiczny
+
+Słoneczne ogniwo (ang.Photovoltaic cell)\index{ogniwo} – najmniejsza część płyty panelu fotowoltaicznego
+
+STC – standard test conditions (ang. )\index{STC} – standardowe warunki testowania
+
+Stały prąd (ang. Direct current)\index{stały prąd} – zobacz DC
+
+Sinusoidalny prąd (ang. Sinusoidal current)\index{przemienny prąd} – zob. przemienny prąd
+
+Stała słoneczna (ang. Solar constant)\index{stała słoneczna} – całkowita irradiacja słoneczna – jest to całkowite natężenie promieniowania słonecznego jakie dochodzi do górnej granicy atmosfery, podawane w jednostce czasu przez jednostkową powierzchnię ustawioną prostopadle do promieniowania w średniej odległości Ziemi od Słońca.
+
+System PV z połączeniem do sieci energetycznej (ang. On-grid instalation) \index{on-grid} – Instalacja fotowoltaiczna, która nadwyżki wyprodukowanej energii (lub całą jej wartość) przesyła do lokalnej sieci energetycznej
+
+
+Telurek kadmu CdTe \index{telurek kadmu}– technologia bardzo prosta. Pracuje w złączu z siarczkiem kadmu CdS, jednak z racji znaczącej szkodliwości (trujący) nie jest akceptowalny społecznie.
+
+Temperatura otoczenia (ang. Ambient temperature)\index{temperatura otoczenia} – temperatura na zewnątrz instalacji.
+
+Voc (ang. Open circuit voltage)\index{napięcie obwodu otwartego} – Napięcie obwodu otwartego/napięcie jałowe
+
+Wat (ang. watt) [W] \index{Wat}– jest to główna jednostka czynnej mocy elektrycznej w układzie SI. Oznacza moc, dla której praca wykonana w czasie jednej sekundy równa jest jednemu dżulowi.
+
+Wyspowy system (ang. Off-grid)\index{off-grid} – zob. autonomiczny system
+
+
+ABSORPCJA ŚWIATŁA\index{absorpcja światła}
+Jest to wartość opisująca ilość promieniowania świetlnego, jaka może być zaabsorbowana i zamieniona na energię przez ogniwo słoneczne. Jest to więc czynnik decydujący o sprawności – im większa absorpcja, tym wyższa sprawność.
+
+AKUMULATOR\index{akumulator}
+W instalacjach fotowoltaicznych działających bez powiązania z siecią generowana energia może być gromadzona jako prąd stały, a następnie wykorzystywana, gdy nie ma słońca, np. wieczorem albo przy złej pogodzie.
+
+
+AMORFICZNE OGNIWA FOTOWOLTAICZNE\index{amorficzne ogniwa fotowoltaiczne}
+Jeden z wariantów ogniw cienkowarstwowych. Podczas produkcji cienka, niekrystaliczna warstwa krzemu jest nanoszona na podłoże metodą naparowania. Podłożem może być szkło lub metal. Dzięki temu zużywana jest mniejsza ilość krzemu, niż na krystaliczne ogniwa, a więc również cena jest niższa. Jednak niższa jest również sprawność.
+
+
+CENA ENERGII WPROWADZONEJ DO SIECI\index{cena energii wprowadzonej do sieci}
+Ta obowiązująca od momentu uruchomienia przez 20 lat kwota za kilowatogodzinę energii wprowadzonej do sieci wynika z dotowania odnawialnych źródeł energii. Energia wprowadzana do sieci jest mierzona za pomocą zalegalizowanego licznika i rozliczana w fakturach wystawianych operatorowi sieci elektroenergetycznej. Niemiecka ustawa o energii odnawialnej (EEG) przewiduje, że cena za tę energię będzie obniżana z każdym rokiem na zasadzie tzw. degresji. Od 2009 do 2011 roku degresja ta była stała. W 2012 roku po raz pierwszy zależy ona od tego, ile nowych elektrowni produkujących energię ze źródeł odnawialnych zostało podłączonych w roku poprzednim. Wraz ze wzrostem liczby nowych instalacji maleją dotacje na kolejny rok.
+
+
+CIENKOWARSTWOWE OGNIWA SŁONECZNE\index{cienkowarstwowe ogniwa słoneczne}
+Amorficzne ogniwa słoneczne. Te brunatne lub prawie czarne ogniwa mają niekrystaliczną warstwę krzemu, która jest naparowana na podłoże ze szkła lub stali szlachetnej. Dzięki temu jest ona bardzo cienka - około sto razy cieńsza, niż w przypadku krystalicznych ogniw słonecznych. Sprawność ogniw cienkowarstwowych jest niższa. Dlatego ich powierzchnia musi być większa od powierzchni modułów krystalicznych. Jednakże ogniwa cienkowarstwowe są bardziej uniwersalne i mają zalety również w przypadku światła rozproszonego i wysokiej temperatury pracy. Odpada również pracochłonne cięcie krzemowych bloków.
+
+
+DIODA OBEJŚCIOWA (dioda bocznikowa)\index{dioda bocznikowa}
+Element półprzewodnikowy, który w razie zacienienia lub uszkodzenia jednego modułu lub ciągu modułów umożliwia ominięcie tego punktu w celu umożliwienia dalszej pracy instalacji.
+
+EVA laminat\index{laminat}
+Skrót oznaczający octan etylowinylu - podczas produkcji w foliach z tego tworzywa hermetycznie osadzane są ogniwa słoneczne w celu zapewniania trwałej ochrony przed wilgocią i korozją. W tym celu tworzywo to jest roztapiane, następnie osadzane są w nim ogniwa. Proces ten jest też nazywany „laminowaniem“.
+
+
+FALOWNIK\index{falownik}
+Ważny element łączący, który w elektrowniach słonecznych zamienia generowany prąd stały na prąd przemienny, aby umożliwić jego wykorzystanie w sieci własnej lub wprowadzenie do sieci publicznej.
+
+
+FOTOWOLTAIKA (PV)\index{fotowoltaika}
+Bezpośrednia przemiana energii promieniowania w energię elektryczną. Pod wpływem światła tak zwany „efekt fotowoltaiczny“ powoduje uwalnianie się dodatnich i ujemnych ładunków elektrycznych - w ten sposób powstaje prąd stały. W zależności od ustawienia, promieniowania słonecznego i typu modułu, powierzchnia 10 m^{2} umożliwia uzyskanie mocy około 1 kWp, a więc około 800 - 1.000 kWh energii elektrycznej rocznie. Nazwa pochodzi od formy dopełniacza greckiego słowa oznaczającego światło („phos“) i nazwiska Alessandro Volta, pioniera elektryczności, od którego pochodzi jednostka „wolt". Po raz pierwszy fotowoltaika została zastosowana w 1958 roku do zasilania satelitów w energię elektryczną
+
+INSTALACJA ELEWACYJNA\index{instalacja elewacyjna}
+Instalacja fotowoltaiczna zamontowana na elewacji lub ścianie budynku. Ustawione na południe pionowe moduły solarne mają o około 30% niższy uzysk niż instalacje na skośnych dachach o takim samym ustawieniu.
+
+
+KĄT AZYMUTU\index{kąt azymutu}
+Kąt ten opisuje, jak bardzo ustawienie instalacji solarnej odbiega od ustawienia południowego (kąt azymutu 0°). W kierunku wschodnim liczba stopni kąta jest wartością ujemną, a w kierunku zachodnim - dodatnią. Wynikają stąd następujące kąty azymutu: wschód -90°; południowy wschód -45°; południowy zachód 45°; zachód 90°.
+
+
+KĄT NACHYLENIA\index{kąt nachylenia}
+Jest to kąt między modułami słonecznymi a osą poziomą. Od kąta 15° moduły są czyszczone przez deszcz. Optymalny kąt wynosi około 30°.
+
+
+KRYSTALICZNE OGNIWA SŁONECZNE\index{krystaliczne ogniwa słoneczne}
+Ogniwa te składają się z bardzo czystego, krystalicznego krzemu, który podczas produkcji jest cięty na cienkie płytki. W zależności od struktury krystalicznej wyróżnia się monokrystaliczne i polikrystaliczne ogniwa słoneczne. Krystaliczne ogniwa mają wyższą sprawność niż ogniwa cienkowarstwowe. Są jednak również droższe.
+
+
+KRZEM\index{krzem}
+Z krzemu składa się ponad 80% ogniw słonecznych wyprodukowanych na świecie. Ten pierwiastek chemiczny (symbol Si) jako półmetal należy do półprzewodników i z 25% udziałem wagowym jest drugim po tlenie pierwiastkiem najczęściej występującym w obrębie skorupy ziemskiej. Oprócz minerałów krzemowych pierwiastek ten występuje przede wszystkim w formie piasku kwarcowego, składającego się z czystego dwutlenku krzemu. Poprzez chemiczną obróbkę z piasku kwarcowego pozyskiwany jest krzem.
+
+MAXIMUM POWER POINT (MPP)\index{maximum power point}
+Ilość mocy wytwarzanej przez ogniwo słoneczne zależy od ilości promieniowania słonecznego, napięcia i temperatury. MPP jest to punkt, w którym ogniwo osiąga swoją maksymalną moc. Punkt ten nie jest stały, tylko jest wyznaczany na bieżąco przez falownik.
+
+MODUŁY SŁONECZNE\index{moduły słoneczne}
+Ogniwa słoneczne nie są montowane pojedynczo, tylko łączone ze sobą ścieżkami przewodzącymi na przedniej i tylnej stronie. W ten sposób powstają moduły składające się z ogniw zainstalowanych między szklanymi szybami lub plastikowymi foliami. Moduły są podtrzymywane przez ramy, które służą również do ich późniejszego mocowania do konstrukcji nośnej. Ogniwa słoneczne modułu są zwykle połączone ze sobą szeregowo, a więc ich napięcia się sumują, a do łączenia mogą być używane cieńsze przewody niż w przypadku łączenia równoległego. Aby jednak, mimo szeregowego połączenia, zabezpieczyć się na wypadek awarii lub zacienienia poszczególnych ogniw, stosowane są diody obejściowe.
+
+MONOKRYSTALICZNE OGNIWA SŁONECZNE\index{monokrystaliczne ogniwa słoneczne}
+Te ogniwa składają się z pojedynczego kryształu i mają czarny lub niebieskawy kolor. Mają największą sprawność, ich spodziewana trwałość wynosi ponad 20 lat. Są stosowane przede wszystkim tam, gdzie wielkość dostępnej powierzchni jest ograniczona.
+
+
+MWP\index{moc modułów słonecznych}
+W megawatach mierzona jest moc elektrowni słonecznych. Małą litera „p“ za MW oznacza peak, po ang. szczyt. Wartość ta określa znamionową moc modułów słonecznych i całych instalacji fotowoltaicznych, która jest osiągana w znormalizowanych warunkach testowych (STC – Standard Test Conditions) przy promieniowaniu 1.000 W/m² i temperaturze modułu 25ºC.
+
+
+NAPROMIENIANIE SŁONECZNE\index{napromieniowanie słoneczne}
+Nie tylko w krajach południowych - również w Niemczech promieniowanie słoneczne jest wystarczająco silne, aby można je było wykorzystać do produkcji energii – latem natężenie napromieniania może sięgać 1.000 W na m^{2}. W celu optymalnego wykorzystania energii słonecznej instalacje fotowoltaiczne w Niemczech powinny być ustawione dokładnie na południe i nachylone pod kątem 30°.
+
+
+NAPROWADZANIE \index{naprowadzanie}
+Jeśli mają być osiągane szczególnie wysokie uzyski, moduły słoneczne mogą być montowane na ruchomych konstrukcjach, które za pomocą silników elektrycznych dokładnie podążają za pozycją słońca. Istnieją systemy naprowadzania jedno- i dwuosiowego. W porównaniu z instalacją o niezmiennym ustawieniu można w ten sposób zwiększyć ilość energii o 30% w skali roku.
+
+
+OGNIWA SŁONECZNE \index{ogniwa słoneczne}
+Dostępne w handlu ogniwa słoneczne są wykonane z półprzewodników. Dlatego ich zasada działania jest bardzo podobna. Znormalizowany jest również powszechnie występujący kwadratowy kształt o długości boku 125 mm lub 156 mm oraz coraz częściej występująca wersja 210 mm. Istnieją jednak różnice, jeśli chodzi o strukturę i materiały – oto przegląd najważniejszych typów ogniw słonecznych:
+Grubość materiału:	gruba warstwa / cienka warstwa
+Materiał:	Si, CdTe, GaAs lub CuInSe
+Struktura krystaliczna:	monokrystaliczna / polikrystaliczna / amorficzna
+Możliwe są też różne konstrukcje, na przykład pod względem struktury powierzchni lub integracji styków (np. wąskie lub przezroczyste), a także pod względem ułożenia na sobie poszczególnych warstw materiałów w celu umożliwienia uzyskania maksymalnego widma światła słonecznego.
+Materiały półprzewodnikowe droższe od krzemu są wykorzystywane w tak zwanych systemach koncentratorowych. W badaniach stosowane są również inne kształty i materiały - w przyszłości zostaną być może opracowane polimerowe lub organiczne oraz barwnikowe ogniwa słoneczne.
+
+OKRES ZWROTU ENERGII\index{okres zwrotu energii}
+Jest to okres odpowiadający czasowi, przez jaki instalacja fotowoltaiczna musi pracować, aby wyprodukować energię, jaka została zużyta na jej wybudowanie. Zwykle wynosi on od trzech do siedmiu lat. W przypadku instalacji z amorficznymi ogniwami słonecznymi możliwe są nawet okresy zwrotu wynoszące zaledwie 17 - 41 miesięcy. Poza tym: elektrownie na węgiel i inne paliwa kopalne nie mają okresu zwrotu energii, ponieważ stale zużywają nowe nośniki energii.
+
+
+PARYTET SIECI\index{parytet sieci}
+Taki stan jest osiągnięty wtedy, gdy koszty produkcji prądu z energii słonecznej spadną na tyle, że zrówna się ona z ceną zakupu u dostawcy energii elektrycznej. Od tego momentu energia słoneczna jest opłacalna nawet bez dotacji. Eksperci spodziewają się, że parytet sieci zostanie osiągnięty w perspektywie średniookresowej.
+
+
+PŁYTKA\index{płytka}
+Bardzo cienkie krzemowe płytki o grubości od 200 do 300 µm są głównym elementem ogniw słonecznych. Są one wycinane z wielkich sztabek lub bloków.
+
+
+PROMIENIOWANIE GLOBALNE\index{promieniowanie globalne}
+Całkowite promieniowanie słoneczne padające na poziomą powierzchnię Ziemi. Składa się ono z promieniowania bezpośredniego i promieniowania rozproszonego w wodzie i pyłach zawartych w atmosferze ziemskiej.
+
+
+PROMIENIOWANIE ROZPROSZONE\index{promieniowanie rozproszone}
+Promieniowanie słoneczne dociera do Ziemi nawet wtedy, gdy niebo jest zachmurzone, w powietrzu znajduje się pył lub inne cząsteczki. To rozproszone promieniowanie można wykorzystać w fotowoltaice, ale zawarta w nim energia jest znacznie mniejsza, niż energia promieniowania bezpośredniego.
+
+
+REGULATOR ŁADOWANIA\index{regulator ładowania}
+Element ten kontroluje i steruje w systemach niezależnych od sieci przepływem prądu między instalacją fotowoltaiczną, odbiornikami i akumulatorem w celu zabezpieczenia przed przeładowaniem lub nadmiernym rozładowaniem.
+
+
+SPRAWNOŚĆ\index{sprawność}
+Sprawność opisuje, jaka część padającego promieniowania słonecznego jest zamieniana w energię elektryczną. Jest to więc efektywność ogniwa lub instalacji fotowoltaicznej.Sprawność zależy od zastosowanego materiału:
+Krzem monokrystaliczny	od 14 do 17%
+Krzem polikrystaliczny	od 13 do 15%
+Krzem amorficzny	od 5 do 7%
+CIS / CdTl	od 7 do 11%
+
+
+STRING\index{string}
+String (z ang. - linia, układ) jest to szereg połączonych szeregowo modułów słonecznych.
+
+
+SYSTEM REZERWOWY\index{system rezerwowy}
+Awaryjny system, który włącza się w ciągu kilku milisekund po zaniku zasilania, zapewniając niezależne zasilanie energią zgromadzoną w akumulatorze.
+
+
+SYSTEMY WYSPOWE\index{systemy off-grid}
+Systemy, które nie są podłączone do sieci i w przeciwieństwie do systemów podłączonych do sieci nie wprowadzają do niej energii, tylko produkują ją wyłącznie na własne potrzeby - zwłaszcza w obszarach oddalonych.
+
+
+USTAWA O ENERGII ODNAWIALNEJ (EEG)\index{Ustawa OZE}
+Ustawa o pierwszeństwie energii odnawialnych jest to element niemieckiego pakietu działań, których celem jest osiągnięcie uzgodnionego w protokole z Kyoto obniżenia emisji CO2 o 21% do 2012 roku i zmniejszenie zależności od kopalnych nośników energii oraz energii atomowej. Do roku 2020 udział energii odnawialnych na niemieckim rynku energii elektrycznej powinien zwiększyć się o co najmniej 20%. Przepisy tej ustawy dotyczą korzystania z odnawialnych źródeł energii w celu wytwarzania energii cieplnej, wprowadzania energii ze źródeł odnawialnych do sieci elektroenergetycznej oraz udziału biopaliw zużywanych przez pojazdy w ruchu drogowym. Model wynagrodzenia za wprowadzanie energii elektrycznej do sieci został przyjęty przez prawie 50 państw.
+
+
+WENTYLACJA\index{wentylacja}
+Uzysk energetyczny z instalacji fotowoltaicznej spada, gdy instalacja się bardzo nagrzeje. Dlatego podczas projektowania i montażu należy zwracać uwagę na odpowiednią wentylację chłodzącą.
+
+
+WPROWADZANIE ENERGII OD SIECI\index{wprowadzenie energii do sieci}
+Instalacje fotowoltaiczne połączone z publiczną siecią wprowadzają do niej wytwarzaną energię. Operator sieci płaci za energię cenę przewidzianą w obowiązujących przepisach. W celu umożliwienia wprowadzania energii do sieci prąd stały wytwarzany przez instalację jest zamieniany na prąd przemienny za pomocą falownika. Akumulator w tych instalacjach nie jest potrzebny.
+
+
+\textbf{WSPÓŁCZYNNIK TEMPERATUROWY}\index{współczynnik temperaturowy}
+Im wyższa jest temperatura pracy ogniwa słonecznego, tym gorsza jego wydajność. Współczynnik ten określa spadek mocy na jeden stopień wzrostu temperatury.
+
+
+\textbf{ZACIENIENIE}\index{zacienienie}
+Chwilowe zacienienia wskutek zabrudzenia lub śniegu, stałe cienie wynikające z lokalizacji - budynki, drzewa czy linie energetyczne albo zacienienie przez inne moduły – zwłaszcza w instalacjach na stelażach – mają decydujący wpływ na moc instalacji fotowoltaicznej. Przy szeregowym połączeniu nawet jeden zacieniony moduł wpływa na cały układ, a tym samym na znaczną część mocy całkowitej. Dlatego głównym celem musi być zapobieganie zacienieniom w ciągu dnia. Na zacienionych powierzchniach lepiej w ogóle nie instalować modułów. Do głównych elementów projektowania należy analiza zacienienia za pomocą indykatora orbity słonecznej (trackera) lub innych przyrządów.
+
+
+\textbf{ZUŻYCIE NA WŁASNE POTRZEBY}\index{zużycie własne}
+Jeśli instalacja fotowoltaiczna nie oddaje całej wytworzonej energii elektrycznej do publicznej sieci, tylko zużywa jej część w sieci domowej lub w najbliższym otoczeniu, ta część jest nazywana zużyciem na własne potrzeby. Również na tę część przyznawane są środki publiczne. Za pomocą licznika dwukanałowego mierzona jest energia wprowadzana do sieci oraz energia pobierana z sieci i z
 
 
 
+\printindex
 \end{document}
