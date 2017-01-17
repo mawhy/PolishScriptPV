@@ -21,7 +21,7 @@
 \usepackage[rgb]{xcolor}
 \usepackage{csquotes}
 \usepackage[author={Michał Małaj}]{pdfcomment}
-\makeindex
+\makeindex[title=Indeks, intoc]
 
 
 
@@ -370,12 +370,12 @@ Ogniwa oparte na amorficznym krzemie są zbudowane inaczej. Zamiast typowego roz
 
 Kiedy przyjrzymy się konfiguracji modułów i generatorów PV, to należy rozważyć wiele ich parametrów. Następujące czynniki mają wpływ na sprawność generatora PV. W przypadku większości modułów podaje się ich szczytową moc wyjściową. Jest to maksymalna moc wyjściową modułów w standardowych warunkach testowych (Standard Test Conditions (STC)). 
 
-\textbf{STC} są zdefiniowane przy poziomie natężenia promieniowania słonecznego rzędu 1000 W/m2 w temperaturze 25 stopni Celsjusza i atmosferycznej masie optycznej równej 1.5. Jest to szczytowe natężenie promieniowania i umiarkowana temperatura, co stanowi "\,idealne" warunki działania dla modułu solarnego. W rzeczywistości, występujące natężenie promieniowania jest znacznie mniejsze niż wartość szczytowa, a występująca temperatura jest zazwyczaj większa niż ta na poziomie STC. 
+\textbf{STC} \index{STC} są zdefiniowane przy poziomie natężenia promieniowania słonecznego rzędu 1000 ${W/m^{2}}$ w temperaturze 25 stopni Celsjusza i atmosferycznej masie optycznej równej 1.5. Jest to szczytowe natężenie promieniowania i umiarkowana temperatura, co stanowi ,,idealne''  warunki działania dla modułu solarnego. W rzeczywistości, występujące natężenie promieniowania jest znacznie mniejsze niż wartość szczytowa, a występująca temperatura jest zazwyczaj większa niż ta na poziomie STC. 
 
 \underline{Na STC wpływają 4 czynniki:} 
 \subsubsection{Oświetlenie}
 
-\textbf{Oświetlenie:} (natężenie światła słonecznego), ta wielkość jest mierzona w watach na metr padające na płaską powierzchnię. Standardowy pomiar to 1000 W/m2, (jak powyżej) 
+\textbf{Oświetlenie:} (natężenie światła słonecznego), ta wielkość jest mierzona w watach na metr padające na płaską powierzchnię. Standardowy pomiar to 1000 ${W/m^{2}}$, (jak powyżej) 
 
 \begin{figure}[H]
 \centering
@@ -424,6 +424,7 @@ ciągu. Spowoduje to zablokowanie prądu, jaki mogłyby popłynąć z
 inwertera do zacienionego szeregu. Stan blokady modułu i związane z nim 
 straty mogą znacząco zwiększać temperaturę ogniwa i z tego powodu 
 zwiększać prawdopodobieństwo ryzyka jego przegrzania. 
+\subsubsection{Moc szczytowa} \index{moc szczytowa}
 
 \textbf{Wp to wat peak} (inaczej szczytowa moc PV w watach, W, która 
 jest wytwarzana w warunkach STC). 
@@ -437,7 +438,7 @@ słonecznego, które zmienia się w ciągu dnia, a także w ciągu roku.
 W przypadku dobrze zaprojektowanego systemu PV zintegrowanego z siecią 
 energetyczną o mocy szczytowej 1 kWp zainstalowanego w Wielkiej Brytanii 
 rocznie będzie produkowane około 965 kWh energii elektrycznej. Taki 
-generator będzie wymagał około 8-15 m2 odsłoniętej powierzchni w 
+generator będzie wymagał około 8-15 ${m^{2}}$ odsłoniętej powierzchni w 
 zależności od typu ogni fotowoltaicznych i inwertera DC-AC. Generator 
 powinien być zainstalowany tak, aby był skierowana w kierunku 
 południowym i odchylony 30 stopni od poziomu, aby uzyskać optymalną 
@@ -849,7 +850,7 @@ wartości powinny zostać
 obliczone dla danych producenta 
 dla zakresu temperatur od -10 do 
 80 \degree C i poziomu promieniowania 
-aż do 1250 W  m2. 
+aż do 1250 ${W/m^{2}}$. 
 Główne przewody DC (od i do całego generatora) powinny mieć minimum 
 następujące parametry: 
 
@@ -1399,7 +1400,7 @@ potrzebne otwory w uchwytach dachowych jeszcze przed wejściem na dach.
 Sprawdź czy krokwie są wystarczająco mocne. Jeśli nie jesteś pewien, 
 poproś inżyniera budowlanego, aby wykonał dla Ciebie obliczenia, Na ogół 
 jeśli krokiew ma być podparciem dla generatora PV, powinna mieć 
-powierzchnię przekroju poprzecznego przynajmniej 7500 mm2. Jeśli żadna 
+powierzchnię przekroju poprzecznego przynajmniej 7500 ${mm^{2}}$. Jeśli żadna 
 krokiew nie spełnia tego wymagania, to wtedy albo dodaj prostopadłą 
 belkę pomiędzy dwiema krokwiami, albo wzmocnij krokiew tak, aby 
 spełniała to wymaganie. 
@@ -2468,8 +2469,8 @@ być zmiana lokalizacji generatora.
 
 \section{Test na egzamin z fotowoltaiki}
 
-Średnia ilość \pdfmarkupcomment[markup=Squiggly,color=green]{energii promieniowania}{Natężenie promieniowania słonecznego docierającego do górnych granic atmosfery określone jest przez stałą słoneczną. Wielkość ta jest zdefiniowana dla średniej odległości Ziemia-Słońce i wynosi około 1366,1 W/m2.}.
- dla województwa lubelskiego wynosi: \textbf{1000 Wm2}
+Średnia ilość \pdfmarkupcomment[markup=Squiggly,color=green]{energii promieniowania}{Natężenie promieniowania słonecznego docierającego do górnych granic atmosfery określone jest przez stałą słoneczną. Wielkość ta jest zdefiniowana dla średniej odległości Ziemia-Słońce i wynosi około 1366,1 ${W/m^{2}}$}.
+ dla województwa lubelskiego wynosi: \textbf{1000${W/m^{2}}$}
 
 Panele przetwarzają energię: \textbf{za pomocą \pdfmarkupcomment[markup=Squiggly,color=green]{konwersji fotowoltaicznej}{Fotowoltaiczna przemiana energii promieniowania słonecznego zachodzi wówczas, gdy energia promieniowania słonecznego jest zamieniana w sposób czysto elektronowy na energię elektryczną. Efekt fotowoltaiczny polega na powstawaniu siły elektromotorycznej w materiale półprzewodnikowym, złączu p-n, w wyniku oświetlania go promieniowaniem o odpowiedniej długości fali. W ogniwach fotowoltaicznych jest wykorzystywane zjawisko fotoelektryczne wewnętrzne zaporowe zachodzące w półprzewodnikach np. w krzemie.}}
 
@@ -2513,7 +2514,7 @@ Odległość paneli od krawędzi dachu: \textbf{od 0,6 do 1 m}
 
 Nasłonecznienie to wielkość fizyczna: \textbf{określająca średnią moc promieniowania przypadającą na jednostkę powierzchni}
 
-Polska znajduje się w strefie nasłonecznienia: \textbf{do 900 do 1000 kWh/m2}
+Polska znajduje się w strefie nasłonecznienia: \textbf{do 900 do 1000 ${kWh/m^{2}}$}
 
 Co to jest mikroinstalacja: \textbf{instalacja OZE o łącznej mocy energii elektrycznej przyłączona do sieci energii elektrycznej o napięciu znamionowym nie większym niż 110 kW}
 
@@ -2522,73 +2523,57 @@ Rodzaje systemów fotowoltaicznych: \textbf{on grid, off grid}
 Moc modułów fotowoltaicznych podajemy w: \textbf{Wp - watt peak}
 
 Wzrost temperatury paneli fotowoltaicznych jest wtedy kiedy:
-Maleje moc wytwarzania energii przez panel fotowoltaiczny
+\textbf{maleje moc wytwarzania energii przez panel fotowoltaiczny}
 
 Jaka jest różnica między falownikiem a inwerterem:
-Nie ma różnicy, to to samo, falownik polska nazwa inwertera
+\textit{Nie ma różnicy, to to samo, falownik polska nazwa inwertera}
 
-Co oznacza skrót BIPV ang. Buidling-Integrated Photovoltaics
+Co oznacza skrót \textbf{BIPV} ang. Buidling-Integrated Photovoltaics
 Instalacja fotowoltaiczna zintegrowana z budynkiem
 
-Jakie rodzaje połączeń stosowane są wewnątrz paneli fotowoltaicznych:
-mieszane
+Jakie rodzaje połączeń stosowane są wewnątrz paneli fotowoltaicznych: \textbf{mieszane}
+
 Do produkcji ogniw fotowoltaicznych wykorzystujemy:
 krzem, arsenek galu, tellurek kadmu, (wszystkie odpowiedzi są dobre)
 
-Najwyższą sprawność energetyczną osiągają ogniwa:
-Monokrystaliczne
+Najwyższą sprawność energetyczną osiągają ogniwa: \textbf{monokrystaliczne}
 
-Sprawność energetyczna fotoogniwa :
-Zwiększa się wraz ze wzrostem natężenia oświetlenia
+\textbf{Sprawność energetyczna} fotoogniwa :\textit{ zwiększa się wraz ze wzrostem natężenia oświetlenia}
 
-W instalacjach fotowoltaicznych wykorzystuje się obwody:
-AC/DC
+W instalacjach fotowoltaicznych wykorzystuje się obwody: \textbf{AC/DC}
 
-Instalacja przyłączona do sieci:
-On grid
+Instalacja przyłączona do sieci: \textbf{on grid}
 
-Wyjście inwertera jest:
+Wyjście inwertera jest: \textbf{Zmiennoprądowe AC}
 
-Zmiennoprądowe AC
+Definicja \textbf{prądu DC przemiennego}:
+\textit{Prąd płynący w jednym kierunku o stałym poziomie natężenia, którego zmiany wartości natężenia wynoszą 0 albo są tak niewielkie , że mogą zostać zaniedbane}
 
-Definicja prądu DC przemiennego:
-Prąd płynący w jednym kierunku o stałym poziomie natężenia, którego zmiany wartości natężenia wynoszą 0 albo są tak niewielkie , że mogą zostać zaniedbane
-
-Maksymalna sprawność modułów fotowoltaicznych to:
-15-18%
+Maksymalna sprawność modułów fotowoltaicznych to:\textbf{15-18\%}
 
 Czy można ładować akumulator w instalacji elektrycznej bez regulatora ładowania:
+\textit{nie ponieważ panele mają wyższe napięcie niż akumulator}
 
-nie ponieważ panele mają wyższe napięcie niż akumulator
+Definicja falownika:\textbf{ Falownik} zmienia napięcie stałe na napięcie zmienne
 
-Definicja falownika:
-Falownik zmienia napięcie stałe na napięcie zmienne
+\textbf{String}: \textit{Zespół połączonych szeregowo modułów fotowoltaicznych}
 
-String:
-Zespół połączonych szeregowo modułów fotowoltaicznych
+Przewody leżące pod modułami PV powinny mieć wytrzymałość: \textbf{minimum 80 stopni C}
 
-Przewody leżące pod modułami PV powinny mieć wytrzymałość:
 
- minimum 80 stopni C
-
-Zaznacz poprawną odpowiedź:
-Dach powinien mieć od 22 do 45 stopni nachylenia
+\textit{Dach powinien mieć \textbf{od 22 do 45 stopni nachylenia}}
 
 Czy istnieje konieczność modyfikacji instalacji elektrycznej do modułu do domu:
-Nie ma potrzeby modyfikacji
+\textit{Nie ma potrzeby modyfikacji}
 
 Dopuszczalne spadki napięć na przewodach między modułami PV a falownikiem:
-Muszą mieć wartość poniżej 1\%
+\textit{Muszą mieć wartość poniżej 1\%}
 
-Jakie zagadnienie trzeba uwzględnić przy konstrukcji wsporczej w instalacji fotowoltaicznej 
-Dodatkowe obciążenie konstrukcji dachu lub elewacji
+Jakie zagadnienie trzeba uwzględnić przy konstrukcji wsporczej w instalacji fotowoltaicznej ? \textbf{Dodatkowe obciążenie konstrukcji dachu lub elewacji}
 
-Protokół instalacji zdawczo-odbiorczy:
-Sporządzony po próbnym uruchomieniu instalacji 
+\textbf{Protokół instalacji zdawczo-odbiorczy}: Sporządzony po próbnym uruchomieniu instalacji 
 
-Prawidłowo wykonana instalacja powinna mieć zabezpieczenie :
-przepięciowe
-odgromowe
+Prawidłowo wykonana instalacja powinna mieć zabezpieczenie : \textbf{przepięciowe i odgromowe}
 \clearpage
 
 \section{Słowniczek}
@@ -2717,7 +2702,7 @@ M.
 
 Moduł (ang. Module) – Integralne, hermetycznie zamknięte urządzenie, składające się z ogniw fotowoltaicznych, zdolne do wytwarzania prądu stałego pod wpływem promieniowania świetlnego.
 
-Moc (ang. Power) – skalarna wielkość fizyczna określająca pracę wykonaną w jednostce czasu przez układ fizyczny. Podawana przez producenta nominalna moc modułu fotowoltaicznego oznacza moc zmierzoną w warunkach testowych (STC). Zależy ona od natężenia promieniowania słonecznego, wyrażana jest w jednostce W/m2.
+Moc (ang. Power) – skalarna wielkość fizyczna określająca pracę wykonaną w jednostce czasu przez układ fizyczny. Podawana przez producenta nominalna moc modułu fotowoltaicznego oznacza moc zmierzoną w warunkach testowych (STC). Zależy ona od natężenia promieniowania słonecznego, wyrażana jest w jednostce ${W/m^{2}}$.
 
 Monokrystaliczny krzem (ang. Monokrystalline silicon) – materiał budulcowy podstawowego i jak dotąd najsprawniejszego typu ogniw fotowoltaicznych. Ogniwa takie zbudowane są z jednorodnego kryształu krzemu o uporządkowanej budowie wewnętrznej. Powstają poprzez cięcie bloku krzemu o odpowiedniej wielkości, na „plastry” grubości ok. 0,3 mm. Monokrystaliczny krzem powstaje poprzez roztopienie krzemu polikrystalicznego, a następnie w powolnym procesie krzepnięcia.
 
@@ -2838,7 +2823,7 @@ Ważny element łączący, który w elektrowniach słonecznych zamienia generowa
 
 
 FOTOWOLTAIKA (PV)\index{fotowoltaika}
-Bezpośrednia przemiana energii promieniowania w energię elektryczną. Pod wpływem światła tak zwany „efekt fotowoltaiczny“ powoduje uwalnianie się dodatnich i ujemnych ładunków elektrycznych - w ten sposób powstaje prąd stały. W zależności od ustawienia, promieniowania słonecznego i typu modułu, powierzchnia 10 m2 umożliwia uzyskanie mocy około 1 kWp, a więc około 800 - 1.000 kWh energii elektrycznej rocznie. Nazwa pochodzi od formy dopełniacza greckiego słowa oznaczającego światło („phos“) i nazwiska Alessandro Volta, pioniera elektryczności, od którego pochodzi jednostka „wolt". Po raz pierwszy fotowoltaika została zastosowana w 1958 roku do zasilania satelitów w energię elektryczną
+Bezpośrednia przemiana energii promieniowania w energię elektryczną. Pod wpływem światła tak zwany „efekt fotowoltaiczny“ powoduje uwalnianie się dodatnich i ujemnych ładunków elektrycznych - w ten sposób powstaje prąd stały. W zależności od ustawienia, promieniowania słonecznego i typu modułu, powierzchnia 10 ${m^{2}}$ umożliwia uzyskanie mocy około 1 kWp, a więc około 800 - 1.000 kWh energii elektrycznej rocznie. Nazwa pochodzi od formy dopełniacza greckiego słowa oznaczającego światło („phos“) i nazwiska Alessandro Volta, pioniera elektryczności, od którego pochodzi jednostka „wolt". Po raz pierwszy fotowoltaika została zastosowana w 1958 roku do zasilania satelitów w energię elektryczną
 
 INSTALACJA ELEWACYJNA\index{instalacja elewacyjna}
 Instalacja fotowoltaiczna zamontowana na elewacji lub ścianie budynku. Ustawione na południe pionowe moduły solarne mają o około 30\% niższy uzysk niż instalacje na skośnych dachach o takim samym ustawieniu.
@@ -2874,10 +2859,10 @@ W megawatach mierzona jest moc elektrowni słonecznych. Małą litera „p“ za
 
 
 \textbf{NAPROMIENIANIE SŁONECZNE}\index{napromieniowanie słoneczne}
-Nie tylko w krajach południowych - również w Niemczech promieniowanie słoneczne jest wystarczająco silne, aby można je było wykorzystać do produkcji energii – latem natężenie napromieniania może sięgać 1.000 W na m2. W celu optymalnego wykorzystania energii słonecznej instalacje fotowoltaiczne w Niemczech powinny być ustawione dokładnie na południe i nachylone pod kątem 30°.
+Nie tylko w krajach południowych - również w Niemczech promieniowanie słoneczne jest wystarczająco silne, aby można je było wykorzystać do produkcji energii – latem natężenie napromieniania może sięgać 1.000 W na m². W celu optymalnego wykorzystania energii słonecznej instalacje fotowoltaiczne w Niemczech powinny być ustawione dokładnie na południe i nachylone pod kątem 30 \degree.
 
 
-NAPROWADZANIE \index{naprowadzanie}
+\textbf{NAPROWADZANIE} \index{naprowadzanie}
 Jeśli mają być osiągane szczególnie wysokie uzyski, moduły słoneczne mogą być montowane na ruchomych konstrukcjach, które za pomocą silników elektrycznych dokładnie podążają za pozycją słońca. Istnieją systemy naprowadzania jedno- i dwuosiowego. W porównaniu z instalacją o niezmiennym ustawieniu można w ten sposób zwiększyć ilość energii o 30\% w skali roku.
 
 
