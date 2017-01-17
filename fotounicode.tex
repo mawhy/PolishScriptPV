@@ -6,6 +6,7 @@
 %\usepackage[cp1250]{inputenc}
 \usepackage[french,polish]{babel}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{ulem}
 \usepackage{amsmath}
 \usepackage{epstopdf}
@@ -18,6 +19,7 @@
 \usepackage[acronym, toc]{glossaries}
 \usepackage{lmodern}
 \usepackage[rgb]{xcolor}
+\usepackage{csquotes}
 \usepackage[author={Michał Małaj}]{pdfcomment}
 \makeindex
 
@@ -34,7 +36,7 @@
 
 \subsection{Co to jest układ fotowoltaiczny? }
 Skrót PV (z j. ang. photovoltaic) oznacza fotowoltaiczny, czyli zdolność 
-materiału do wytwarzania napięcia, zwykle dzięki fotoemisji, w warunkach 
+materiału do wytwarzania napięcia, zwykle dzięki fotoemisji \index{fotoemisja}, w warunkach 
 ekspozycji na energię promieniowania, szczególnie światła. 
 
 Proces konwersji światła (fotonów) bezpośrednio na elektryczność 
@@ -44,9 +46,9 @@ elektrony, uwalniając je z atomów, umożliwiając im płynięcie przez
 materiał i wytwarzanie elektryczności. 
 
 Materiały fotowoltaiczne używane są do budowy ogniw słonecznych, które 
-na ogół są zgrupowane w moduły fotowoltaiczne (znane także jako panele 
+na ogół są zgrupowane w moduły fotowoltaiczne \index{moduł fotowoltaiczny} (znane także jako panele 
 słoneczne). Moduły mogą być wzajemnie pogrupowane i połączone tworząc 
-generatory fotowoltaiczne (pola modułów). 
+generatory fotowoltaiczne \index{generator fotowoltaiczny} (pola modułów). 
 
 Na układ PV składa się kilka elementów składowych: panele słoneczne, 
 system montażu, inwerter (falownik), licznik energii, okablowanie, układ 
@@ -124,13 +126,13 @@ używane w procesie produkcji systemów PV. Jednak te czynniki
 środowiskowe są niewielkie i mogą być łatwo kontrolowane dzięki 
 recyklingowi i odpowiedniej utylizacji. 
 \item Energia słoneczna jest nieco droższa w produkcji niż energia ze 
-Ľródeł konwencjonalnych, w części w związku z kosztami wytworzenia 
+źródeł konwencjonalnych, w części w związku z kosztami wytworzenia 
 urządzeń PV, a w części w związku ze sprawnością konwersji urządzeń tych 
 urządzeń. W miarę jak sprawność konwersji zacznie wzrastać, to koszty 
 wytwarzania tych urządzeń zaczną spadać i fotowoltaika stanie się coraz 
 bardziej konkurencyjna pod względem kosztów w porównaniu z paliwami 
 konwencjonalnymi. 
-\item Energia słoneczna jest zmiennym Ľródłem energii. W tym przypadku 
+\item Energia słoneczna jest zmiennym źródłem energii. W tym przypadku 
 produkcja energii zależy od słońca. Może się zdarzyć, że urządzenia 
 słoneczne mogą nie wytwarzać energii przez pewien okres czasu, co może 
 prowadzić do niedoborów w sytuacjach, gdy duża część energii jest 
@@ -141,7 +143,7 @@ właśnie czerpana ze słońca.
 
 Systemy fotowoltaiczne są na ogół sklasyfikowane pod względem ich 
 wymogów funkcjonalnych i operacyjnych, konfiguracji podzespołów, i od 
-tego jak są połączone z innymi Ľródłami energii i odbiornikami 
+tego jak są połączone z innymi źródłami energii i odbiornikami 
 (urządzeniami elektrycznymi). Istnieją dwie główne kategorie: układy 
 podłączone do sieci energetycznej (on-grid) i układy autonomiczne (off-grid). 
 
@@ -149,8 +151,8 @@ podłączone do sieci energetycznej (on-grid) i układy autonomiczne (off-grid).
 
 Układy PV podłączone do sieci energetycznej są zaprojektowane w taki 
 sposób, aby działać równolegle i w połączeniu z siecią energetyczną. 
-Głównym elementem takiego systemu jest \textit{\textbf{inwerter (falownik)}}. Inwerter 
-przemienia moc stałą produkowaną przez panele PV na moc zmienną zgodną z 
+Głównym elementem takiego systemu jest \textit{\textbf{inwerter (falownik)}}. Inwerter \index{inwerter}
+przemienia moc stałą \index{prąd stały} produkowaną przez panele PV na moc zmienną \index{prąd zmienny} zgodną z 
 wymaganiami napięcia i mocy sieci energetycznej. Inwerter automatycznie 
 zatrzymuje dostarczanie energii do sieci energetycznej, gdy sieć nie 
 jest zasilana. Poniżej przedstawiono typowy układ PV zintegrowany z 
@@ -158,15 +160,17 @@ siecią energetyczną
 
 \begin{figure}[h]
 \centering
+	\caption{Typowy układ PV zintegrowany z siecią energetyczną }
  	\includegraphics[natwidth=14.41cm,natheight=9.89cm]{media/image3.png}
+ 	\label{fig:on-grid}
 \end{figure}
 
 \subsubsection{Układy autonomiczne (off-grid)} 
-Układy autonomiczne są zaprojektowane tak, aby działać niezależnie od 
+Układy autonomiczne \index{off-grid} są zaprojektowane tak, aby działać niezależnie od 
 sieci energetycznej, i są na ogół zaprojektowane tak i mają rozmiary 
 odpowiednie, aby zasilać urządzenie stało- i zmiennoprądowe. Układy autonomiczne mogą być zasilane tylko przez 
 generator PV albo mogą używać generatora zasilanego wiatrem lub 
-zasilania sieciowego jako Ľródła zapasowego zasilania, gdzie wyjście 
+zasilania sieciowego jako źródła zapasowego zasilania, gdzie wyjście 
 stałoprądowe (DC) modułu lub generatora PV jest bezpośrednio podłączone 
 do obciążenia. 
 
@@ -182,18 +186,20 @@ systemu PV.
 Jednak w wielu autonomicznych systemach PV do magazynowania energii 
 używa się akumulatorów. 
 
-Poniżej mamy przedstawiony diagram typowego autonomicznego układu PV z 
+Poniżej mamy na rysunku \ref{fig:off-grid} na stronie \pageref{fig:off-grid} , przedstawiony diagram typowego autonomicznego układu PV z 
 akumulatorowym magazynowaniem energii zasilającego odbiorniki stało- i 
 zmiennoprądowe. 
 
 \begin{figure}[h]
 \centering
+\caption{Typowy autonomiczny układu PV z akumulatorowym magazynowaniem energii}
 \includegraphics[natwidth=16.60cm,natheight=12.13cm]{media/image4.png}
+\label{fig:off-grid}
 \end{figure}
 
 \subsection{Taryfy gwarantowane}
 
-Taryfy gwarantowane są mechanizmem motywującym wprowadzonym przez rząd w 
+Taryfy gwarantowane \index{taryfy gwarantowane} są mechanizmem motywującym wprowadzonym przez rząd w 
 celu promowania prywatnych inwestycji malej skali w zakresie technologii 
 odnawialnych. Prawo obliguje dystrybutorów energii, aby płacili pewną 
 kwotę za każdą produkowaną jednostkę (kWh) odnawialnej energii 
@@ -223,7 +229,7 @@ do 3 kW - 0,75 zł/kWh; od 3 do 10 kW - 0,65 zł/kWh. }
 
 \subsection{Zielone certyfikaty}
 
-Zielone certyfikaty są zbywalnymi certyfikatami przyznawanymi przez 
+Zielone certyfikaty \index{zielone certyfikaty} są zbywalnymi certyfikatami przyznawanymi przez 
 odpowiedni organ za każdą l MWh lub 1000 kWh wyprodukowanej energii ze 
 źródła odnawialnego. Są przypisane do każdej jednostki energii 
 niezależnie, czy ich producent zużyje ją sam czy prześle ją do sieci 
@@ -262,7 +268,7 @@ koszty robocizny. W ogólności:
 kosztuje, ale można dzięki temu więcej zaoszczędzić, 
 \item Dachówki fotowoltaiczne kosztują więcej niż konwencjonalne panele 
 słoneczne, 
-\item Zintegrowane z dachem systemy PV są na ogół droższe od systemów 
+\item Zintegrowane z dachem systemy PV \index{bipv} są na ogół droższe od systemów 
 niezintegrowanych (zmodernizowanych), jednak jeśli wymagana jest większa naprawa dachu, zintegrowane płyty/panele PV mogą zrekompensować koszt pokrycia dachu.
 \end{itemize}
 
@@ -281,7 +287,7 @@ których każdy ma inne właściwości. Ogniwem o największej sprawności jest
 ogniwo monokrystaliczne, które ma czarny matowy wygląd. Ten typ ogniw ma 
 sprawność konwersji energii świetlnej na elektryczność rzędu 15-18\%. 
 
-\textbf{Ogniwa polikrystaliczne} są koloru niebieskiego z wyraźnie widocznymi 
+\textbf{Ogniwa polikrystaliczne}\index{ogniwo polikrystaliczne} są koloru niebieskiego z wyraźnie widocznymi 
 kryształami i posiadają sprawność rzędu 10-12\%. Ogniwa z \textbf{amorficznego 
 krzemu} mają sprawność 6-8\% i są na ogół koloru brązowego. Te ogniwa 
 mają krótszą żywotność niż te krystaliczne, ale są tańsze z powodu ich 
@@ -297,9 +303,10 @@ modułem, który został skonstruowany z wielu ogniw.
 
 \begin{figure}[h]
 \centering
+\caption{Ogniwo monokrystaliczne i ogniwo polikrystaliczne}
 \includegraphics[natwidth=14.65cm,natheight=5.17cm]{media/image5.jpg}
 \end{figure}
- ogniwo monokrystaliczne ogniwo polikrystaliczne 
+
 
 \subsubsection{Moduły}
 Moduł jest bardziej powszechnie znany jako panel 
@@ -328,7 +335,7 @@ Część 1: Wymagania dotyczące konstrukcji.
 
 MS 005 - Wymaganie certyfikacji produktów: solarne moduły fotowoltaiczne 
 
-\subsubsection{Generator PV, pole modułów PV} - to kolekcja elektrycznie 
+\subsubsection{Generator PV, pole modułów PV} \index{generator fotowoltaiczny}- to kolekcja elektrycznie 
 połączonych modułów, które z kolei mogą być połączone szeregowo lub 
 równolegle w zależności o tego, jakie napięcie lub natężenie prądu jest 
 wymagane dla systemu. Wymagania systemowe są zazwyczaj podyktowane przez 
@@ -336,14 +343,14 @@ konieczne charakterystyki wejściowe dla inwertera/falownika.
 
 \begin{figure}[h]
 \centering
+\caption{Ogniwo}
 \includegraphics[natwidth=2.72cm,natheight=2.65cm]{media/image6.jpg}
 \end{figure}
 \begin{figure}[h]
 \centering
+\caption{Moduł}
 \includegraphics[natwidth=2.96cm,natheight=6.58cm]{media/image7.jpg}
 \end{figure}
- \ \ \ \ \ \ \ \ \ \ \ \ ogniwo \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 
-moduł 
 
 \subsection{Konstrukcja modułu}
 
@@ -353,15 +360,11 @@ Ogniwa oparte na amorficznym krzemie są zbudowane inaczej. Zamiast typowego roz
 
 \begin{figure}[h]
 \centering
+\caption{Moduły z ogniwami opartymi na krzemie \textit{monokrystalicznym }i  \textit{polikrystalicznym} }
 \includegraphics[natwidth=13.60cm,natheight=5.34cm]{media/image8.jpg}
 \end{figure}
- 
 
-\ \ \ \ \textit{moduły z ogniwami opartymi na krzemie }\ \ \ \ 
-\textit{moduły z ogniwami opartymi na krzemie }
 
-\ \ \ \ \textit{monokrystalicznym }\ \ \ \ \textit{ }\ \ \ \ \textit{
-polikrystalicznymi }
 
 \subsection{Wpływ temperatury, oświetlenia i zacienienia na sprawność układu}
 
@@ -374,8 +377,10 @@ Kiedy przyjrzymy się konfiguracji modułów i generatorów PV, to należy rozwa
 
 \textbf{Oświetlenie:} (natężenie światła słonecznego), ta wielkość jest mierzona w watach na metr padające na płaską powierzchnię. Standardowy pomiar to 1000 W/m2, (jak powyżej) 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
+\caption{Potencjał elektryczności wytworzonej z optymalnie ustawionych 
+modułów PV dla Polski}
 \includegraphics[natwidth=10.21cm,natheight=9.71cm]{media/image9.jpg}
 \end{figure}
  
@@ -450,7 +455,7 @@ elektryczność pokrywa się z czasem wytwarzania.
 Na płaskich dachach możliwe jest zamocowanie systemu PV na konstrukcji, 
 która może być ustawiona pod odpowiednim kątem. Jeśli generator PV ma 
 być zamocowany na pionowej fasadzie lub dachu, to korzystną orientacja 
-powinna być orientacja południowa. W każdym przypadku powinno się unikać 
+powinna być orientacja południowa.\index{azymut} W każdym przypadku powinno się unikać 
 orientacji zachodniej. Nachylony generator PV będzie otrzymywać więcej 
 światła niż generator ustawiony pionowo. 
 
@@ -469,11 +474,12 @@ konfigurację: stałoprądową i zmiennoprądową, jako część systemu. Wyjśc
 paneli PV do inwertera jest stałoprądowe (DC), a wyjście inwertera jest 
 zmiennoprądowe (AC). Chociaż DC powszechnie używa się w układach 
 elektrycznych to jednak różni się ono znacznie od AC. Przyglądnijmy się 
-dokładnie definicji DC: 
-
-\textit{"prąd płynący w jednym kierunku, którego zmiany wartości 
+dokładnie definicji prądu stałego DC: \index{prąd stały}
+\begin{displayquote}
+\textit{prąd płynący w jednym kierunku, którego zmiany wartości 
 natężenia wynoszą zero albo są tak niewielkie, że mogą zostać 
-zaniedbane"}
+zaniedbane}
+\end{displayquote}
 
 Istotną cechą prądu DC jest to, że utrzymuje on stały poziom natężenia w 
 czasie. To odróżnia go od prądu AC, którego natężenie jest zmienne w 
@@ -481,23 +487,24 @@ czasie. W przypadku sieci energetycznej dostarczającej elektryczność
 zmiany te mają charakter sinusoidalny. Wartość prądu AC o charakterze 
 sinusoidalnym zmienia się okresowo. \textbf{Częstotliwość f} tych 
 zmian jest, obok amplitudy - maksymalnej chwilowej wartości płynącego 
-prądu, drugim istotnym parametrem charakteryzującym prąd AC. 
+prądu, drugim istotnym parametrem charakteryzującym prąd AC.\index{prąd zmienny} 
 
 \subsection{Charakterystyki elektryczne}
 
 
 Urządzenia fotowoltaiczne mogą również operować w zakresie od obwodu 
-otwartego (zerowe natężenie) do zwarcia (zerowe napięcie). Pomiędzy tymi 
+otwartego (zerowe natężenie)\index{napięcie obwodu otwartego} do zwarcia (zerowe napięcie)\index{prąd zwarciowy}. Pomiędzy tymi 
 dwoma ekstremami jest punkt, w którym wytwarzana moc jest maksymalna - 
 80\% napięcia przy obwodzie otwartym dla modułów krystalicznych i 60\% 
 napięcia dla obwodu otwartego dla tych opartych na amorficznym krzemie. 
-Jest to \textbf{maksymalny punkt mocy} (Maximum Power Point). 
+Jest to \textbf{maksymalny punkt mocy} (Maximum Power Point). \index{maksymalny punkt mocy}
 
 Wierzchołek tej krzywej wskazuje maksymalny punkt mocy modułu przy 
 temperaturze 25 stopni Celsjusza. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
+\caption{Charakterystyki elektryczne}
 \includegraphics[natwidth=13.05cm,natheight=7.35cm]{media/image10.jpg}
 \end{figure}
  
@@ -508,13 +515,13 @@ półprzewodnikowego, który ma własności diody:
 \begin{itemize}
 \item Jeśli do układu podłączymy obciążenie o pomijalnej impedancji, to 
 mamy w istocie do czynienia ze zwarciem. Oznacza to, że natężenie będzie 
-osiągało maksymalną wartość - \textbf{natężenie zwarcia} Isc. Jest to prąd, który 
+osiągało maksymalną wartość - \textbf{natężenie zwarcia}\index{natężenie zwarcia} Isc. Jest to prąd, który 
 umożliwiłby przepływ, jeśli podłączylibyśmy dodatnie i ujemne zaciski 
 modułu przy zerowym napięciu (zerowa moc) 
 \item Jeśli do układu podłączymy obciążenie o nieskończonej impedancji, 
 to w istocie mamy do czynienia z \textbf{obwodem otwartym}. Oznacza to, że żaden 
 prąd nie może płynąć, a napięcie na module będzie osiągało maksimum - to 
-jest napięcie obwodu otwartego Voc. 
+jest \textbf{napięcie obwodu otwartego} Voc. \index{napięcie obwodu otwartego}
 \item Kiedy do układu podłączymy pośrednie obciążenie, moduł PV będzie 
 wytwarzał moc, która osiągnie maksimum w punkcie mocy maksymalnej. Ta 
 sytuacja pokazana na wykresie powyżej. 
@@ -552,10 +559,12 @@ generatora są istotne, ponieważ muszą zostać obliczone, zanim podejmie
 się decyzję co do wielkości inwertera. Typowy system zintegrowany z 
 siecią jest zilustrowany poniżej: 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[natwidth=15.90cm,natheight=12.83cm]{media/image11.jpg}
+\caption{Typowy system zintegrowany z siecią}
+\includegraphics[natwidth=10.90cm,natheight=8.83cm]{media/image11.jpg}
 \end{figure}
+
 \subsubsection{Napięcie}
 
 Napięcie i natężenie wyjściowe generatora zależy od konfiguracji i 
@@ -572,16 +581,18 @@ Są to proste obliczenia, mnożąc napięcie wyjściowe moduł przez liczbę mod
 
 Konfiguracja pojedynczego szeregu (stringa): moduły połączone szeregowo 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
+\caption{Moduły połączone szeregowo}
 \includegraphics[natwidth=15.92cm,natheight=5.67cm]{media/image12.jpg}
 \end{figure}
  
 Konfiguracja wielu szeregów (stringów): moduły połączone w szeregi 
 (stringi), a te równolegle 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
+\caption{Moduły połączone w szeregi (stringi), a te równolegle }
 \includegraphics[natwidth=15.92cm,natheight=7.11cm]{media/image13.jpg}
 \end{figure}
  
@@ -635,7 +646,7 @@ podczas instalacji generatora.
 Zwykle instalacja wymaga następującego wyposażenia: 
 
 \begin{itemize}
-\item Rozdzielnica DC 
+\item Rozdzielnica (skrzynka)DC 
 \item Przewody do styków + i - od odłącznika DC/skrzynki DC do 
 generatora PV 
 \item Przewody z odłącznika DC do inwertera 
@@ -646,13 +657,12 @@ napięcia i natężenia, przy których będą pracować. Powinno się też
 uwzględniać efekty cieplne będące skutkiem przepływu prądu i światła 
 słonecznego. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
+\caption{Rozdzielnica prądu stałego}
 \includegraphics[natwidth=5.03cm,natheight=6.45cm]{media/image14.jpg}
 \end{figure}
  
-
-
 Połączenia/styki/końcówki tych przewodów również powinny zostać poddane 
 ocenie parametrów. Odpowiednio dobrane wtyki i gniazda są zwykle 
 dopasowane do modułów i szeregów tak, aby uprościć proces instalacji 
@@ -666,9 +676,12 @@ specyfikacją projektu.
 \item Złączki muszą mieć takie same lub większe specyfikacje napięcia i 
 natężenia jak przewody, z którymi mają być połączone. 
 \item Jeśli złączki mają być dostępne dla nieprzeszkolonego personelu, 
-należy umieścić ostrzeżenie . w pobliżu łącznika. Powinno ono brzmieć: 
-"Ten wyłącznik nie powinien być rozłączany pod obciążeniem - wyłącz 
-najpierw zasilanie AC inwertera." Te wyłączniki mogą zostać uszkodzone 
+należy umieścić ostrzeżenie w pobliżu łącznika. Powinno ono brzmieć: 
+\begin{displayquote}
+\textit{Ten wyłącznik nie powinien być rozłączany pod obciążeniem - wyłącz 
+najpierw zasilanie AC inwertera.}
+\end{displayquote}
+ Te wyłączniki mogą zostać uszkodzone 
 przez wyładowania łukowe, jeśli zostaną wyłączane pod obciążeniem. 
 \item Złączki nie mogą i nie powinny być używane jako sposób 
 elektrycznej izolacji DC. 
@@ -692,8 +705,11 @@ wodoodporne, i jest rekomendowane, aby były elastyczne (wielożyłowe),
 aby umożliwić przemieszczanie generatora/modułów spowodowane przez wiatr 
 i temperaturę. Aby zminimalizować ryzyko uszkodzenia, drogi przewodów powinny być krótkie na ile to możliwe. 
 Kiedy wymagane jest położenie długiego przewodu, dobrą praktyką jest 
-opisanie wzdłuż położenia kabli DC informacji: "Niebezpieczeństwo, 
-wysokie napięcie (w ciągu dnia) - przewód do generatora PV". Należy 
+opisanie wzdłuż położenia kabli DC informacji: 
+\begin{displayquote}
+\textit{Niebezpieczeństwo, wysokie napięcie (w ciągu dnia) - przewód do generatora PV.}
+\end{displayquote}
+ Należy 
 poinformować personel, który jest odpowiedzialny na konserwację budynku 
 o ostatnich zmianach, jakie zostały wykonane. 
 
@@ -770,7 +786,7 @@ wymagania napięciowe:
 \end{itemize}
 Istnieją jednak pewne wady związane ze stosowaniem diod bocznikujących. 
 
-? Ze względu na to, że diody są połączone szeregowo z szeregami, to 
+Ze względu na to, że diody są połączone szeregowo z szeregami, to 
 oznacza, że występuje na nich pewien spadek napięcia. Wynosi on w 
 przybliżeniu około 0.7 V. 
 
@@ -917,17 +933,22 @@ obciążenia.
 \item Jeśli nie wybierzemy odłącznika obciążenia, to wybrany model 
 powinien posiadać blokadą. 
 \item Gdy blokada nie jest dostępna, i nie wybrano odłącznika 
-obciążenia, to ten fakt powinien być wyraźnie oznakowany: "\,Ten 
-odłącznik nie funkcjonuje pod obciążeniem - odłącz najpierw zasilanie 
-zmiennoprądowe inwertera' '. Taka opcja nie jest preferowana. 
+obciążenia, to ten fakt powinien być wyraźnie oznakowany:
+\begin{displayquote} 
+\textit{Ten odłącznik nie funkcjonuje pod obciążeniem - odłącz najpierw zasilanie zmiennoprądowe inwertera.}
+\end{displayquote} Taka opcja nie jest preferowana. 
 \item Odłącznik DC musi posiadać parametry odpowiadające maksymalnym 
 występującemu napięciu i natężeniu. Te powinny odpowiadać napięciu przy 
 obwodzie otwartym w temperaturze -10 o C i natężeniu prądu zwarcia przy 
 warunkach STC. 
-\item Odłącznik DC powinien być oznakowany jako "\,Główny odłącznik 
-generatora PV", z wyraźnie oznakowanymi pozycjami włączenia i 
+\item Odłącznik DC powinien być oznakowany jako 
+\begin{displayquote} 
+\textit{Główny odłącznik generatora PV}
+\end{displayquote}  z wyraźnie oznakowanymi pozycjami włączenia i 
 odłączenia. Obudowy odłączników powinny również zawierać ostrzeżenie: 
-"\, Niebezpieczeństwo, występują części p od napięciem w ciągu dnia." 
+\begin{displayquote} 
+\textit{Niebezpieczeństwo, występują części pod napięciem w ciągu dnia.}
+\end{displayquote}  
 Wszystkie etykiety powinny być wyraźne, łatwo widoczne, dobrze 
 umocowane. 
 \end{itemize}
@@ -948,8 +969,9 @@ przypadkowe wyłączenie podczas pracy pod obciążeniem i chociaż może to
 być niewidoczne, to może poważnie zmniejszyć wydajność i bezpieczeństwo 
 użytkowania wyłącznika. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
+\caption{Odłącznik prądu stałego DC}
 \includegraphics[natwidth=7.57cm,natheight=6.48cm]{media/image23.jpg}
 \end{figure} 
 
@@ -963,28 +985,28 @@ zainstalowany w pobliżu inwertera, a drugi w pobliżu odbiornika energii. Jeśl
 \item Odłączniki powinny odłączać wszystkie przewody pod napięciem i 
 przewody neutralne (wielobiegunowe) 
 \item Powinny mieć zrozumiałe oznaczenia pozycji WŁĄCZONE i WYŁĄCZONE 
-oraz etykietę \underline{,,} \underline{System PV - wyłącznik 
-awaryjny.''} 
+oraz etykietę 
+\begin{displayquote}
+\textit{System PV - wyłącznik awaryjny. }
+\end{displayquote}
 \item Odłącznik w pobliżu odbiornika energii powinien mieć możliwość 
 blokady tylko w pozycji WYŁĄCZONE i powinien być łatwo dostępny. Oznacza 
 to, że odłącznik NIE MOŻE mieć blokady w pozycji WŁĄCZONE. 
 \item W punkcie zamontowania każdego odłącznika AC, sieć publiczną 
-powinno się uważać za źródło, 
+powinno się uważać za źródło, a instalację PV należy uznać za obciążenie. 
 \end{itemize}
-a instalację PV należy uznać za obciążenie. 
 
-\begin{center}Wymagania odnośnie odłączników AC są częścią odpowiednich 
-norm. \end{center}
 
-\begin{figure}[h]
+Wymagania odnośnie odłączników AC są częścią odpowiednich 
+norm.
+
+\begin{figure}[H]
 \centering
+\caption{Odłącznik prądu zmiennego AC}
 \includegraphics[natwidth=8.40cm,natheight=8.40cm]{media/image24.jpg}
 \end{figure}
- 
+\subsubsection{Skrzynki przyłączeniowe prądu stałego }
 
-\textbf{ }
-
-Skrzynki przyłączeniowe 
 
 Skrzynki przyłączeniowe DC mają zastosowanie w przypadku, gdy istnieje 
 więcej niż jeden szereg (string). Skrzynka przyłączeniowa jest punktem, 
@@ -994,10 +1016,16 @@ którym podłącza się bezpieczniki szeregowe (jeśli się je stosuje).
 Skrzynki przyłączeniowe DC powinny zawierać: 
 
 \begin{itemize}
-\item Skrzynki przyłączeniowe DC powinny być oznakowane jako ,, Skrzynka 
-przyłączeniowa generatora PV " a także: "\, Niebezpieczeństwo! Zawiera 
-elementy pod napięciem w ciągu dnia." Wszystkie etykiety powinny być 
-wyraĽne, łatwo widoczne, dobrze umocowane i długotrwałe. 
+\item Skrzynki przyłączeniowe DC powinny być oznakowane jako
+\begin{displayquote}
+\textit{Skrzynka przyłączeniowa generatora PV}
+\end{displayquote}
+ a także: 
+\begin{displayquote}
+Niebezpieczeństwo! Zawiera elementy pod napięciem w ciągu dnia.
+\end{displayquote}
+ Wszystkie etykiety powinny być 
+wyraźne, łatwo widoczne, dobrze umocowane i długotrwałe. 
 \item Rekomenduje się, aby istniały sposoby odłączania i odseparowania 
 poszczególnych szeregów od generatora PV, które można bezpiecznie 
 obsługiwać, gdy są one pod napięciem. Można to osiągnąć przez 
@@ -1012,7 +1040,7 @@ zwarciem była osiągana przez:
 \begin{itemize}
 \item Obudowy z materiałów były wykonane całkowicie nieprzewodzących. 
 \item Szyny montażowe dla biegunów + i - były adekwatnie 
-odseparowane/oddzielone przez zastosowanie odpowiednich płyt izolujących 
+odseparowane i oddzielone przez zastosowanie odpowiednich płyt izolujących 
 albo odseparowanie przez użycie osobnych skrzynek dla biegunów + i . 
 Przewody i układ zacisków były taki, aby zwarcie podczas instalacji lub 
 prac serwisowych było wyjątkowo mato prawdopodobne. 
@@ -1028,23 +1056,21 @@ potem pojedynczą złączkę do inwertera.
 \includegraphics[natwidth=15.35cm,natheight=10.20cm]{media/image25.jpg}
 \end{figure}
  
+\subsubsection{Bezpieczne odizolowanie }
 
- 
-
-Bezpieczne odizolowanie 
 
 Wszystkie panele PV są pod napięciem od momentu wytworzenia i z tego 
 powodu powinny być uznane jako faktycznie wytwarzające elektryczność 
-przez cały czas. Normy stwierdzają, że "\,Osprzęt PV po stronie DC 
-powinien być uznany jako będący pod napięciem, nawet jeśli system PV 
-jest odłączony ze strony AC." Mając to na uwadze, przypisujemy 
+przez cały czas. Normy stwierdzają, że 
+\begin{displayquote}
+\textit{Osprzęt PV po stronie DC powinien być uznany jako będący pod napięciem, nawet jeśli system PV jest odłączony ze strony AC.}
+\end{displayquote}
+Mając to na uwadze, przypisujemy 
 zwiększoną wagę procesowi bezpiecznego odizolowania, pracy w warunkach 
 pod napięciem zgodnie z przepisami BHP oraz podzieleniu procesu 
 instalacji na etapy. Należy z tego powodu starannie przestrzegać 
 sekwencjonowania procesu instalacji, gdyż zapewnia to, że podczas 
-żadnego etapu instalacji 
-
-instalatorzy nie będą wystawieni na działanie niebezpiecznych napięć DC. 
+żadnego etapu instalacji instalatorzy nie będą wystawieni na działanie niebezpiecznych napięć DC. 
 Na przykład, montowanie zacisków i podłączanie powinno być wykonywane 
 przy wyłączonym napięciu, a sekwencjonowanie zadań zapewnia ochronę 
 przed będącymi pod napięciem końcówkami DC i złączami. Proces podziału 
@@ -1077,7 +1103,7 @@ inwertera, powinien być wyłączony (tylko jeśli ma możliwość odcięcia
 obciążenia) w celu odcięcia zasilania DC, które jest podpięte do 
 inwertera. W większości wypadków, odłącznik DC nie ma funkcji 
 zablokowanie go w pozycji wyłączonej, więc musimy mieć zdejmowalną 
-dĽwignię, którą można przechowywać w osobnym miejscu (zamykanej 
+dźwignię, którą można przechowywać w osobnym miejscu (zamykanej 
 skrzynce), która powinna być dostępna od osoby wykonującej odizolowanie. 
 W celu odłączenia układu 'AC odłącznik AC, umiejscowiony w pobliżu 
 odbiornika energii, powinien być wyłączony. Odłącznik AC powinien być 
@@ -1093,25 +1119,24 @@ napięcia. Kiedy wskaźniki pokazują, że napięcie systemu AC jest
 wyłączone, następująca przeprowadzić następującą procedurę: 
 
 \begin{itemize}
-\item WskaĽniki napięcia powinny sprawdzone na znanym testowym źródle 
+\item Wskaźniki napięcia powinny sprawdzone na znanym testowym źródle 
 pod napięciem. 
-\item Sprawdzić napięcie pomiędzy stykami: 
+\item Sprawdzić napięcie pomiędzy stykami: uziemionym i fazowym, neutralnym i fazowym, uziemionym i neutralnym. 
+\item Ponownie należy sprawdzić wskaźniki napięcia na znanym testowym źródle 
+pod napięciem. 
 \end{itemize}
- uziemionym i fazowym, neutralnym i fazowym, uziemionym i neutralnym. . 
-Ponownie należy sprawdzić wskaĽniki napięcia na znanym testowym Ľródle 
-pod napięciem. Aby przetestować nie będącą pod napięciem część DC 
-układu, należy przeprowadzić następującą procedurę: 
-
  
 
-WskaĽniki napięcia powinny być sprawdzone na znanym testowym Ľródle pod 
+
+Aby przetestować nie będącą pod napięciem część DC układu, należy przeprowadzić następującą procedurę: 
+
+ 
+\begin{itemize}
+\item Wskaźniki napięcia powinny być sprawdzone na znanym testowym źródle pod 
 napięciem. 
-
-? Sprawdzić napięcie między stykami: 
-
-uziemionym i plusem, minusem i plusem, uziemionym i minusem. 
-
-Ponownie sprawdzić wskaĽniki napięcia na testowym Ľródle pod napięciem. 
+\item Sprawdzić napięcie między stykami: uziemionym i plusem, minusem i plusem, uziemionym i minusem. 
+\item Ponownie sprawdzić wskaźniki napięcia na testowym źródle pod napięciem.
+\end{itemize}
 
 
 
@@ -1703,7 +1728,8 @@ pokrycia dachowego.
 
  
 
-Prowadnice 
+\subsubsection{Prowadnice }
+
 
 Prowadnice, które są mocowane do uchwytów dachowych, utrzymują moduły 
 PV. Powszechna konfiguracja to ustawienie poziome (dwie prowadnice dla 
@@ -1733,7 +1759,7 @@ czy używa się zasuwek czy śrub imbusowych.
 
  
 
-Wentylacja modułów 
+\subsubsection{Wentylacja modułów }
 
 W celu prawidłowego chłodzenia generatora należy zapewnić wystarczającą 
 wentylację (typowo wystarcza odstęp minimum 25mm pod spodem). W 
@@ -1745,7 +1771,8 @@ instalację okapów i wentylację kalenicy.
 
  
 
-Wentylacja inwertera 
+\subsubsection{Wentylacja inwertera }
+
 
 Inwertery nagrzewają się i należy dla nich zapewnić wystarczającą 
 wentylację. Należy przestrzegać wartości prześwitów zalecanych przez 
@@ -1757,7 +1784,8 @@ oznaczona odpowiednią etykietą "Nie blokować wentylacji".
 
  
 
-Systemy nadążane - trackery 
+\subsubsection{Systemy nadążane - trackery }
+
 
 Układ nadążny jest używany do śledzenia drogi słońca - dziennej albo 
 rocznej. Stosując takie układy, pozyskuje się dodatkową energię w 
@@ -1800,7 +1828,8 @@ jest zwykle ustalony. System dwuosiowy może mieć te dwa kąty nastawne.
 
  
 
-Uziemienie i piorunochrony 
+\subsection{Uziemienie i piorunochrony }
+
 
 Ze względu na to, że systemy PV są montowane na zewnątrz budynku, to są 
 one podatne na wyładowania atmosferyczne. Dlatego układy powinny 
@@ -1811,6 +1840,7 @@ uwagi:
 \item rama generatora PV 
 \item inwerter 
 \end{itemize}
+
 Uziemienie 
 
 Uziemienie ramy generatora jest wykonywane w celu usunięcia ryzyka 
@@ -2071,7 +2101,8 @@ soków z drzew.
 
 \subsection{Przeglądy co sześć miesięcy}
 
-Skrzynka przyłączeniowa generatora PV 
+\subsubsection{Skrzynka przyłączeniowa generatora PV }
+
 
 Należy otworzyć skrzynkę przyłączeniową, aby przeprowadzić przegląd 
 połączeń. Należy sprawdzić czy nie ma żadnych insektów oraz innych ciał 
@@ -2079,14 +2110,15 @@ obcych czy znaków zawilgocenia. Należy sprawdzić bezpieczniki (jeśli
 mają zastosowanie). Użyj woltomierza i amperomierza DC, aby zmierzyć i 
 zapisać napięcie obwodu otwartego i poziom natężenia prądu na wyjściu 
 skrzynki przyłączeniowej. Zanotuj również poziom natężenie 
-promieniowania słonecznego w czasie wykonywania pomiarów. Usuń\textbf{bezpieczniki} (jeśli mają zastosowanie) i zapisz dla każdego szeregu 
+promieniowania słonecznego w czasie wykonywania pomiarów. Usuń \textbf{bezpieczniki} (jeśli mają zastosowanie) i zapisz dla każdego szeregu 
 poziomy napięcia obwodu otwartego i natężenia prądu. Zwróć 
 uwagę czy nie występują różnice pomiędzy zmierzonymi wielkościami dla 
 poszczególnych szeregów (można to wykorzystać w celu późniejszego 
 skorygowania). Można także te pomiary wykorzystać do określenia czy 
 wydajność generatora PV zmniejsza się w miarę upływu czasu. 
 
-\textbf{Powierzchnia generatora PV}
+\subsubsection{Powierzchnia generatora PV}
+
 
 \begin{itemize}
 \item Zanotuj stan modułów. Szukaj oznak degradacji (to mogą być zmiany 
@@ -2110,7 +2142,8 @@ wewnątrz skrzynki i dokonaj naprawy, jeśli zachodzi taka potrzeba.
 \end{itemize}
  
 
-\textbf{Inwerter}
+\subsubsection{Inwerter}
+
 Następujące czynności należy wykonać w przypadku inwertera 
 
  
@@ -2324,7 +2357,7 @@ wyłączony.
 
 \begin{itemize}
 \item Brak mocy z obwodu DC - Po wykonaniu czynności z punktu 1, usterkę 
-jest łatwo zidentyfikować. SprawdĽ wyświetlacz inwertera, który powinien 
+jest łatwo zidentyfikować. Sprawdź wyświetlacz inwertera, który powinien 
 wskazywać brak zasilania od strony generatora PV. 
 \end{itemize}
 Może być wiele przyczyn takiej usterki: obluzowany główny przewód DC, o 
@@ -2545,7 +2578,7 @@ Czy istnieje konieczność modyfikacji instalacji elektrycznej do modułu do dom
 Nie ma potrzeby modyfikacji
 
 Dopuszczalne spadki napięć na przewodach między modułami PV a falownikiem:
-Muszą mieć wartość poniżej 1%
+Muszą mieć wartość poniżej 1\%
 
 Jakie zagadnienie trzeba uwzględnić przy konstrukcji wsporczej w instalacji fotowoltaicznej 
 Dodatkowe obciążenie konstrukcji dachu lub elewacji
@@ -2559,20 +2592,20 @@ odgromowe
 \clearpage
 
 \section{Słowniczek}
-Amper [A] (ang. Ampere)\index{amper} – jednostka natężenia prądu [I], oznacza ilość ładunku elektrycznego przepływającego przez powierzchnię w jednostce czasu. 1A≈6.241 × 1018 elektronów lub: 1A = 1 C (kulomb) /1 s (sekundę). Wartość natężenia prądu wyrażoną w amperach nazywamy amperażem (ang. Amperage)
+\textbf{Amper [A]} (ang. Ampere)\index{amper} – jednostka natężenia prądu [I], oznacza ilość ładunku elektrycznego przepływającego przez powierzchnię w jednostce czasu. 1A≈6.241 × 1018 elektronów lub: 1A = 1 C (kulomb) /1 s (sekundę). Wartość natężenia prądu wyrażoną w amperach nazywamy amperażem (ang. Amperage)
 
-Amperogodzina [Ah] (ang. Ampere-hour)\index{amperogodzina} – ilość energii elektrycznej równa przepływowi prądu o wartości 1 A w czasie 1 godziny. Jest miarą pojemności m.in. akumulatorów elektrycznych, określa ich zdolność do zasilania obwodu elektrycznego prądem o danym natężeniu przez określony czas.
+\textbf{Amperogodzina [Ah]} (ang. Ampere-hour)\index{amperogodzina} – ilość energii elektrycznej równa przepływowi prądu o wartości 1 A w czasie 1 godziny. Jest miarą pojemności m.in. akumulatorów elektrycznych, określa ich zdolność do zasilania obwodu elektrycznego prądem o danym natężeniu przez określony czas.
 Ah = natężenie prądu  [A] * czas [h]
 
-AC (ang. Alternating current)\index{prąd zmienny} – prąd zmienny – prąd elektryczny, którego natężenie jest zmienne w czasie. Wyróżniamy tu prąd okresowo zmienny (tętniący, przemienny) i nieokresowy. Skrót AC stosowany jest najczęściej do określenia prądu naprzemiennego (zob. przemienny prąd)
+\textbf{AC} (ang. Alternating current)\index{prąd zmienny} – prąd zmienny – prąd elektryczny, którego natężenie jest zmienne w czasie. Wyróżniamy tu prąd okresowo zmienny (tętniący, przemienny) i nieokresowy. Skrót AC stosowany jest najczęściej do określenia prądu naprzemiennego (zob. przemienny prąd)
 
-Akumulator elektryczny (ang. Rechargeable battery)\index{akumulator} – rodzaj odwracalnego ogniwa galwanicznego, służy do wielokrotnego magazynowania i oddawania energii elektrycznej w postaci chemicznej. Podstawowym parametrem akumulatora jest pojemność. Jest to zdolność ogniwa do przechowywania ładunku elektrycznego, wyrażana w amperogodzinach [Ah] i np. kulombach [C]. 1 Ah = 3600 C
+\textbf{Akumulator elektryczny} (ang. Rechargeable battery)\index{akumulator} – rodzaj odwracalnego ogniwa galwanicznego, służy do wielokrotnego magazynowania i oddawania energii elektrycznej w postaci chemicznej. Podstawowym parametrem akumulatora jest pojemność. Jest to zdolność ogniwa do przechowywania ładunku elektrycznego, wyrażana w amperogodzinach [Ah] i np. kulombach [C]. 1 Ah = 3600 C
 
-AM (ang. air mass)\index{masa optyczna atmosfery} – masa optyczna atmosfery – Jest wskaźnikiem długości drogi, jaką pokonuje wiązka promieniowania słonecznego bezpośredniego przez atmosferę, by dotrzeć do powierzchni ziemi. Np. masa optyczna atmosfery na poziomie morza przy bezchmurnym niebie, kiedy Słońce znajduje się w zenicie i ciśnienie atmosferyczne wynosi P=1,013*105 Pa AM jest równa 1 (AM1). Przy prostopadłym do Ziemi ustawieniu Słońca światło słoneczne przechodzi przez optyczną masę atmosfery (AM – air mass) tylko raz – M1. W innych przypadkach, droga promieniowania słonecznego przez atmosferę jest dłuższa. Gdy słońce znajduje się pod kątem 30° nad horyzontem, wartość optycznej masy atmosfery wynosi AM2 i wskazuje, że droga światła słonecznego przez atmosferę jest dwa razy dłuższa niż przy AM1. (Zob. też promieniowanie, promieniowanie rozproszone)
+\textbf{AM} (ang. air mass)\index{masa optyczna atmosfery} – masa optyczna atmosfery – Jest wskaźnikiem długości drogi, jaką pokonuje wiązka promieniowania słonecznego bezpośredniego przez atmosferę, by dotrzeć do powierzchni ziemi. Np. masa optyczna atmosfery na poziomie morza przy bezchmurnym niebie, kiedy Słońce znajduje się w zenicie i ciśnienie atmosferyczne wynosi P=1,013*105 Pa AM jest równa 1 (AM1). Przy prostopadłym do Ziemi ustawieniu Słońca światło słoneczne przechodzi przez optyczną masę atmosfery (AM – air mass) tylko raz – M1. W innych przypadkach, droga promieniowania słonecznego przez atmosferę jest dłuższa. Gdy słońce znajduje się pod kątem 30° nad horyzontem, wartość optycznej masy atmosfery wynosi AM2 i wskazuje, że droga światła słonecznego przez atmosferę jest dwa razy dłuższa niż przy AM1. (Zob. też promieniowanie, promieniowanie rozproszone)
 
-Arsenek galu GaAs (ang. Gallium arsenide) \index{arsenek galu}– nieorganiczny związek chemiczny galu i arsenu, półprzewodnik wykorzystywany w fotowoltaice, wykazuje większą od krzemu odporność na działanie promieniowania elektromagnetycznego i lepsze dopasowanie czułości do widma promieniowania słonecznego. Ogniwa z GaAs mają największe sprawności, lecz także najwyższy koszt. Znajdują one zastosowanie w przemyśle kosmicznym.
+\textbf{Arsenek galu} GaAs (ang. Gallium arsenide) \index{arsenek galu}– nieorganiczny związek chemiczny galu i arsenu, półprzewodnik wykorzystywany w fotowoltaice, wykazuje większą od krzemu odporność na działanie promieniowania elektromagnetycznego i lepsze dopasowanie czułości do widma promieniowania słonecznego. Ogniwa z GaAs mają największe sprawności, lecz także najwyższy koszt. Znajdują one zastosowanie w przemyśle kosmicznym.
 
-Amorficzny krzem (a-Si) (ang. Amorphous silicon)\index{amorficzny krzem} – to niekrystaliczny alotrop pozyskiwany z krzemu, tzw. krzem w fazie amorficznej, czyli nieuporządkowanej. Jest szeroko rozpowszechniony w produkcji ogniw fotowoltaicznych, wyświetlaczy LCD, OLED. Cena ogniw wykonanych z amorficznego krzemu jest niższa dzięki zastosowaniu prostszych technologii niż przy krzemie mono i polikrystalicznym. Sprawność i trwałość ogniw z krzemu amorficznego są niższe, choć zdolności absorpcyjne większe. Żywotność krzemu w postaci bezpostaciowej jest ponad dwukrotnie niższa od krzemu monokrystalicznego i wynosi ok. 10 lat. Technologia nanoszenia cienkich warstw krzemu amorficznego umożliwia produkcję elastycznych ogniw cienkowarstwowych, co zwiększa zakres różnorodności zastosowań fotowoltaiki.
+\textbf{Amorficzny krzem} (a-Si) (ang. Amorphous silicon)\index{amorficzny krzem} – to niekrystaliczny alotrop pozyskiwany z krzemu, tzw. krzem w fazie amorficznej, czyli nieuporządkowanej. Jest szeroko rozpowszechniony w produkcji ogniw fotowoltaicznych, wyświetlaczy LCD, OLED. Cena ogniw wykonanych z amorficznego krzemu jest niższa dzięki zastosowaniu prostszych technologii niż przy krzemie mono i polikrystalicznym. Sprawność i trwałość ogniw z krzemu amorficznego są niższe, choć zdolności absorpcyjne większe. Żywotność krzemu w postaci bezpostaciowej jest ponad dwukrotnie niższa od krzemu monokrystalicznego i wynosi ok. 10 lat. Technologia nanoszenia cienkich warstw krzemu amorficznego umożliwia produkcję elastycznych ogniw cienkowarstwowych, co zwiększa zakres różnorodności zastosowań fotowoltaiki.
 
 Absorpcja (ang. Absorption)\index{absorpcja} – pochłanianie promieni słonecznych, powodujące przechodzenie elektronów do stanu wzbudzonego.
 
@@ -2600,15 +2633,15 @@ Bezpośrednie promieniowanie (ang. Direct radiation)\index{bezpośrednie promien
 Blokujące diody (ang. blocking diode)\index{dioda blokująca} – tak jak diody bocznikujące są elementem zabezpieczającym panel fotowoltaiczny przed wpływem prądu zwrotnego. Ich działanie polega na zatrzymaniu przepływu prądu przez niesprawne ogniwo.
 
 
-Chalkopiryty CuFeS2 (ang. Chalcopyrite)\index{chalkopiryt} – są to minerały z grupy siarczków, w fotowoltaice wykorzystywane jako półprzewodniki w ogniwach cienkowarstwowych. Najczęściej stosowany jest diselenek miedziowo indowy. Ogniwa wykorzystujące chalkopiryty wykazują w warunkach laboratoryjnych sprawności rzędu 18%, jednak technologia ich wytwarzania jest stosunkowo droga.
+\textbf{Chalkopiryty} CuFeS2 (ang. Chalcopyrite)\index{chalkopiryt} – są to minerały z grupy siarczków, w fotowoltaice wykorzystywane jako półprzewodniki w ogniwach cienkowarstwowych. Najczęściej stosowany jest diselenek miedziowo indowy. Ogniwa wykorzystujące chalkopiryty wykazują w warunkach laboratoryjnych sprawności rzędu 18\%, jednak technologia ich wytwarzania jest stosunkowo droga.
 
-Czysta energia (ang. Clean Energy)\index{energia odnawialna}, energia odnawialna – Energia powstała przez wykorzystanie odnawialnych źródeł energii.
+\textbf{Czysta energia} (ang. Clean Energy)\index{energia odnawialna}, energia odnawialna – Energia powstała przez wykorzystanie odnawialnych źródeł energii.
 
-Charakterystyka prądowa-napięciowa (ang. voltage-current characteristic)\index{charakterystyka prądowa-napięciowa} – wykres przedstawiający zależność pomiędzy natężeniem prądu a napięciem w panelu fotowoltaicznym, od punktu bez obciążenia do maksymalnego napięcia. Krzywa wykresu obrazuje wydajność baterii słonecznej.
+\textbf{Charakterystyka prądowa-napięciowa} (ang. voltage-current characteristic)\index{charakterystyka prądowa-napięciowa} – wykres przedstawiający zależność pomiędzy natężeniem prądu a napięciem w panelu fotowoltaicznym, od punktu bez obciążenia do maksymalnego napięcia. Krzywa wykresu obrazuje wydajność baterii słonecznej.
 
-Całkowite promieniowanie (ang. total radiation)\index{całkowite promieniowanie} – jest to suma całkowitej ilości światła pochodzącego ze słońca dochodzącego do powierzchni ziemi – zestawienie wartości promieniowania bezpośredniego, rozproszonego i odbitego.
+\textbf{Całkowite promieniowanie} (ang. total radiation)\index{całkowite promieniowanie} – jest to suma całkowitej ilości światła pochodzącego ze słońca dochodzącego do powierzchni ziemi – zestawienie wartości promieniowania bezpośredniego, rozproszonego i odbitego.
 
-Cienkowarstwowe ogniwa (ang. Thin-film solar cells)\index{cienkowarstwowe ogniwa} – należą do ogniw drugiej generacji, wykonane są poprzez nanoszenie cienkich warstw krzemu amorficznego na szklane płytki. Stanowią one obiecującą alternatywę dla ogniw I generacji. Dają możliwość umieszczania na rozmaitych obiektach, również na elastycznych. Obecnie efektywność produkcji energii jest niższa niż przy zwykłych ogniwach, jednakże niższe są również koszty produkcji.
+\textbf{Cienkowarstwowe ogniwa} (ang. Thin-film solar cells)\index{cienkowarstwowe ogniwa} – należą do ogniw drugiej generacji, wykonane są poprzez nanoszenie cienkich warstw krzemu amorficznego na szklane płytki. Stanowią one obiecującą alternatywę dla ogniw I generacji. Dają możliwość umieszczania na rozmaitych obiektach, również na elastycznych. Obecnie efektywność produkcji energii jest niższa niż przy zwykłych ogniwach, jednakże niższe są również koszty produkcji.
 
 CISG (ang. Copper indium gallium selenide)\index{CISG} – materiał półprzewodnikowy zbudowany z miedzi, indu, galu i selenu. Jest to typ ogniw cienkowarstwowych charakteryzujących się wyższą efektywnością i trwałością. Należą one do ogniw II generacji.
 
@@ -2719,7 +2752,7 @@ Prąd elektryczny (ang. Electric current) – uporządkowany ruch ładunków ele
 
 Przemienny prąd AC (ang. Alternating current) – jest jednym z rodzajów prądów zmiennych (zob. AC), charakteryzujący się okresowymi zmianami napięcia elektrycznego z określoną częstotliwością. Wartości chwilowe prądu przyjmują wartości na przemian dodatnie i ujemne. Pożądanym jest by wartość średnia całookresowa wynosiła 0. Zakłócenia lub nieliniowość powodują powstanie przebiegu odkształconego. Urządzenia elektryczne codziennego użycia pracują z wykorzystaniem prądu zmiennego. (zob też: Napięcie elektryczne)
 
-Polimery – z naprzemiennymi wiązaniami chemicznymi pojedynczymi i podwójnymi mają strukturę podobną do półprzewodnika (polimery przewodzące). Są bardzo tanie w produkcji, elastyczne. Sprawności rzędu 3 – 5 %.
+Polimery – z naprzemiennymi wiązaniami chemicznymi pojedynczymi i podwójnymi mają strukturę podobną do półprzewodnika (polimery przewodzące). Są bardzo tanie w produkcji, elastyczne. Sprawności rzędu 3 – 5 \%.
 
 Półprzewodnikowe związki (ang. semiconductor) – są to materiały o pasmowym charakterze budowy, w którym warstwy pasm przewodnictwa oddzielone są od siebie
 
